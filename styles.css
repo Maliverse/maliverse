@@ -1,0 +1,360 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    overflow-x: hidden; 
+    background: url(./img/mvstrokes.svg) repeat;
+    background-color: rgb(64, 17, 139);   
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+}
+.hero{
+    position: relative;
+    margin: 0;
+}
+.container{
+    position: relative;
+    padding: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    margin: 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+    min-width: 200px;
+    max-width: 400px;
+    background-image: url(img/mvstrokes.png);
+    background-size:contain;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.frame{
+    border: 2px solid black;
+    padding:20px;
+    border-radius: 360px;
+    border-style: dashed;
+    background-color: rgba(255, 255, 255, 0.712);
+    backdrop-filter: blur(30px) ;
+    box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.151);
+    
+}
+.status-circle{
+    color: #000;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 360px;
+    border-style: dashed;
+    background-color: lightgreen;
+    background-size: 50px;
+}
+.status-circle:hover{
+    border-color:  rgb(0, 128, 53);
+    cursor: pointer;
+    background: lightgreen;
+    box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
+}
+.status-circle2{
+   
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 360px;
+    border-style: dashed;
+    background-color: lightgreen;
+    margin-left: 200px;
+    border-bottom-left-radius: 3px;  
+    
+}
+
+.status-circle2:hover{
+    border-color:  rgb(0, 128, 53);
+    cursor: pointer;
+    background: lightgreen;
+    box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
+}
+.bubble{
+    background-color: rgb(224, 255, 224);
+    height: 20px;
+    width: 20px;
+    border-radius: 360px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+
+
+.profile-img{
+    position: relative;
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 360px;
+    border: 5px solid rgb(179, 55, 251);
+    border-style: dashed;
+    
+    margin: 0;    
+    
+}
+.text{
+    background-color: black;
+    border: 2px solid black;
+    margin-top: 50px;
+    border-radius: 2px;
+    
+}
+h1{
+    text-align: center;
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(89, 5, 100);
+ }
+h2{
+    text-align: center;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:40;
+    color: rgb(150, 150, 150);
+}
+.view-button{
+    position: relative;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-style: dotted;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 212, 255);
+    background:rgb(110, 68, 136);
+    font-size: 25px;
+}
+.view-button:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(135, 47, 185);
+     box-shadow: 0 15px 30px rgba(135, 46, 138, 0.3);
+    
+}
+
+.button-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-style:dashed;
+    border-radius: 5px;
+    margin-top: 30px;
+    max-width: 13rem;
+    padding: 3px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+}
+.button-div:hover{
+    
+    border-color: rgb(135, 47, 185);
+
+}
+
+.watermark {
+    display: flex;
+    justify-content: center;
+    margin-top: 87vh;
+    width: 100vw;
+    
+}
+
+.logo h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(172, 172, 172);
+    margin-left: 25px;
+}
+.logo{
+    max-width: 90px;
+    color: white;
+    display: flex;
+    justify-content: center;   
+ }
+.watermark-divider{
+ 
+    background: rgb(172, 172, 172);
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 2px;
+    height: 4rem;
+
+}
+/*----
+MEDIA QUERIES
+---*/
+
+@media(min-width:60rem){
+    .container{
+    position: relative;
+    /*background:linear-gradient( to top, rgb(255, 255, 255), rgba(221, 221, 221, 0.87) );*/
+    padding: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    margin: 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+    max-width: 1000px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.753);
+    border: 3px solid white;
+    border-left-color:  rgb(87, 87, 87);
+    border-bottom-color: rgb(87, 87, 87);
+    border-style: dashed;
+    }
+    .frame{
+
+    
+            border: 2px solid black;
+            padding:20px;
+            border-radius: 360px;
+            border-style: dashed;
+            background-color: rgba(231, 231, 231, 0.315);
+            backdrop-filter: blur(30px) ;
+            box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.151);
+           
+        }
+        .status-circle{
+            color: #000;
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 360px;
+            border-style: dashed;
+            background-color: lightgreen;
+            background-size: 50px;
+            margin-left: 50px;
+        }
+        .status-circle:hover{
+            border-color:  rgb(0, 128, 53);
+            cursor: pointer;
+            background: lightgreen;
+            box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
+        }
+        .status-circle2{
+            color: #000;
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 360px;
+            border-style: dashed;
+            background-color: lightgreen;
+            margin-left: 300px;
+            border-bottom-left-radius: 3px;   
+            
+        }
+        
+        .status-circle2:hover{
+            border-color:  rgb(0, 128, 53);
+            cursor: pointer;
+            background: lightgreen;
+            box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
+        }
+        
+        .bubble{
+            background-color: rgb(224, 255, 224);
+            height: 20px;
+            width: 20px;
+            border-radius: 360px;
+            margin-left: 10px;
+            padding: 0;
+        }
+    .profile-img{
+        position: relative;
+        min-width: 400px;
+        max-width: 400px;
+        border-radius: 360px;
+        border: 5px solid rgb(179, 55, 251);
+        border-style: dashed;    
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        background-color: rgb(87, 87, 87);
+        border: 2px solid rrgb(87, 87, 87);
+        margin-top: 50px;
+        border-radius: 2px;
+        
+    }
+    h1{
+        text-align: center;
+        padding-top: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(110, 68, 136);
+        font-size:30px;
+     }
+     h2{
+         text-align: center;
+         padding-top: 5px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight:40;
+         color: rgb(87, 87, 87);
+     }
+     .view-button{
+         position: relative;
+         padding: 20px;
+         padding-top: 15px;
+         padding-bottom: 15px;
+         border: 2px solid rgb(255, 255, 255);
+         border-style: dotted;
+         border-radius: 10px;
+         cursor: pointer;
+         color: rgb(255, 212, 255);
+         background:rgb(110, 68, 136);
+         font-size: 25px;
+     }
+     .view-button:hover{
+         color: rgb(255, 255, 255);
+         background: rgb(135, 47, 185);
+          box-shadow: 0 15px 30px rgba(135, 46, 138, 0.3);
+         
+     }
+     
+     .button-div{
+         position: relative;
+         display: flex;
+         justify-content: center;
+         border: 1px solid black;
+         border-style:dashed;
+         border-radius: 5px;
+         margin-top: 30px;
+         max-width: 13rem;
+         padding: 3px;
+         left: 50%;
+         right: 50%;
+         transform: translate(-50%);
+     }
+     .button-div:hover{
+         
+         border-color: rgb(255, 255, 255);
+     
+     }
+     .watermark {
+        display: flex;
+        justify-content: center;
+        margin-top: 92vh;
+        width: 100vw;
+        
+    }
+}
+/*----
+MEDIA QUERIES END
+---*/

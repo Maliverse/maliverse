@@ -1,0 +1,565 @@
+*,
+*::before,
+*::after {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    overflow-x: hidden;
+    background: url(img/mvstrokes.png) repeat;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(64, 17, 139);
+    max-height: 4em;
+    min-height: 4em;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.329);
+    z-index: 100;
+   
+}
+.nav2{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(64, 17, 139);
+    max-height: 4em;
+    min-height: 4em;
+    margin-top: 30px;
+    border-radius: 360px; 
+    
+}
+.mv-logo-colored{
+    max-width: 100%;
+    max-height: 100vh;
+    
+}
+.navlogo{
+    padding-top: 4px;
+    max-width: 70px;
+    min-width: 70px;
+   
+}
+ul{
+    display: block;
+    margin-top: 5px;
+    margin-right:5px ;
+    float: right;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+li{
+    padding-left: 10px;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+section .hero{
+    position: relative;
+
+}
+main{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    max-width: 100%;
+    height: 100vh;
+
+}
+.container{
+    position: relative;
+    padding: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    margin: 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+    min-width: 200px;
+    max-width: 400px;
+    background-image: url(img/mvstrokes.png);
+    background-size: contain;
+    backdrop-filter: blur(30px) ;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%);
+}
+
+
+.frame{
+    
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 360px;
+    border-style: dashed;
+    background-color: rgba(231, 231, 231, 0.315);
+    backdrop-filter: blur(30px) ;
+    box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.151);
+   
+}
+.status-circle{
+    color: #000;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 360px;
+    border-style: dashed;
+    background-color: lightgreen;
+    background-size: 50px;
+}
+.status-circle:hover{
+    border-color:  rgb(0, 128, 53);
+    cursor: pointer;
+    background: lightgreen;
+    box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
+}
+.status-circle2{
+    color: #000;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 360px;
+    border-style: dashed;
+    background-color: lightgreen;
+    margin-left: 180px;
+    border-bottom-left-radius: 3px;   
+    
+}
+
+.status-circle2:hover{
+    border-color:  rgb(0, 128, 53);
+    cursor: pointer;
+    background: lightgreen;
+    box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
+}
+
+.bubble{
+    background-color: rgb(224, 255, 224);
+    height: 20px;
+    width: 20px;
+    border-radius: 360px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.profile-img{
+    position: relative;
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 360px;
+    border: 5px solid rgb(179, 55, 251);
+    border-style: dashed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+.strikethrough{
+    background-color: black;
+    border: 2px solid black;
+    margin-top: 50px;
+    border-radius: 2px;
+    
+}
+h1{
+   text-align: center;
+   padding-top: 40px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: rgb(89, 5, 100);
+}
+h2{
+    text-align: center;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:40;
+    color: rgb(124, 124, 124);
+}
+h3{
+    text-align: left;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: rgb(89, 5, 100);
+   font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    
+}
+
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+.continue-button{
+    position: relative;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid black;
+    border-style: dotted;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 212, 255);
+    background:rgb(110, 68, 136);
+    font-size: 25px;
+}
+.continue-button:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(135, 47, 185);
+     box-shadow: 0 15px 30px rgba(135, 46, 138, 0.3);
+    
+}
+
+
+.button-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-style:dashed;
+    border-radius: 5px;
+    margin-top: 30px;
+    max-width: 10rem;
+    padding: 3px;
+}
+.button-div:hover{
+    
+    border-color: rgb(135, 47, 185);
+
+}
+.portfolio{
+    padding: 25px;
+}
+
+
+.project-grid{
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(127, 10, 182);
+    border-style:dashed;
+    background: rgba(243, 243, 243, 0.664);
+    border-radius: 20px 20px 20px 20px;
+   
+}
+.project img{
+    position: relative;
+    max-width: 19em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 10px;
+    border: 1px solid rgb(127, 10, 182);
+    border-style:dashed;
+   
+  
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+figcaption{
+    position: relative;
+    margin-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.view-button{
+    position: relative;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid black;
+    border-style: dotted;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 212, 255);
+    background:rgb(110, 68, 136);
+    font-size: 20px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50% );
+    margin-bottom: 10px;
+
+}
+footer{
+    color: white;
+    position: relative;
+    width: 100vw;
+    background-color: rgb(64, 17, 139);
+    padding: 10%;
+    margin-top: 100px;
+}
+h5{
+    display: flex;
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+/*media queries for web view--
+-----------------------------------------------------
+
+/*media queries for web view--
+-----------------------------------------------------*/
+
+
+@media(min-width:60rem){
+    nav{
+        position: static;
+        background-color: rgb(64, 17, 139);
+        max-height: 6em;
+        min-height: 6em;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    .nav2{
+        position: fixed;
+        width: 100%;
+        background-color: rgb(64, 17, 139);
+        max-height: 7em;
+        min-height: 7em;
+        margin-top: 45px;
+       
+       
+    }
+    .mv-logo-colored{
+        position: relative;
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%);   
+        
+    }
+    .navlogo{
+        max-width: 70px;
+        min-width: 70px;
+        position: relative;
+        display: inline;
+        margin-top: 15px;
+        margin-left: 200px;
+        
+    }
+    ul{
+
+        position: relative;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin-top: 40px;
+        margin-right: 200px;
+        display: inline-flex;
+        
+        
+        
+    }
+    li{
+        position: relative;
+        padding-left: 40px;
+        list-style: none;
+        display: flex;
+       
+    }
+
+    section .hero{
+        position: absolute;
+        
+    
+    }
+    .container{
+    position: relative;
+    background-color: white;
+    padding: 50px;
+   
+    border-radius: 25px;
+    max-width: 1200px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 310PX;
+    background-color: rgba(231, 231, 231, 0.315);
+    backdrop-filter: blur(30px) ;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+  
+
+    }
+ 
+    
+
+    .frame{
+    position: relative;
+    border: 2px solid black;
+    border-radius: 360px;
+    border-style: dashed;
+    backdrop-filter: blur(20px);
+    background-color: rgba(253, 207, 2, 0.178);
+    padding: auto;
+    
+    }
+    .status-circle{
+        color: #000;
+        border: 2px solid black;
+        height: 50px;
+        width: 50px;
+        border-radius: 360px;
+        border-style: dashed;
+        background-color: lightgreen;
+        background-size: 50px;
+        margin-left: 80px;
+    }
+    .status-circle:hover{
+        border-color:  rgb(0, 128, 53);
+        cursor: pointer;
+        background: lightgreen;
+        box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
+    }
+    .status-circle2{
+        color: #000;
+        border: 2px solid black;
+        height: 50px;
+        width: 50px;
+        border-radius: 360px;
+        border-style: dashed;
+        background-color: lightgreen;
+        margin-left: 300px;
+        border-bottom-left-radius: 3px;     
+        
+    }
+    
+    .status-circle2:hover{
+        border-color:  rgb(0, 128, 53);
+        cursor: pointer;
+        background: lightgreen;
+        box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
+    }
+    .profile-img{
+        position: relative;
+        min-width: 250px;
+        max-width: 450px;
+        border-radius: 360px;
+        border: 5px solid rgb(179, 55, 251);
+        border-style: dashed; 
+        padding: 0px;
+
+        
+    }
+
+    .strikethrough{
+        background-color: rgb(107, 107, 107);
+        border: 1px solid rgb(107, 107, 107);
+        margin-top: 0px;
+        border-radius: 2px; 
+        height: 40vh;  
+        margin-left: 50px;
+        display: flex;
+        align-self: center;
+        margin-right:50px;
+        max-height: 500px;
+        
+    }
+    h1{
+        text-align: left;
+        padding-top: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(89, 5, 100);
+        align-self: flex-start;
+        align-content: center;
+     }
+     h2{
+         text-align: left;
+         padding-top: 5px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight:40;
+         color: rgb(124, 124, 124);
+         align-self: flex-start;
+     }
+     h3{
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(89, 5, 100);
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 30px;
+        font-size: 25px;
+        
+    }
+    .about-me{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        margin-top: 0;
+        font-size: 25px;
+        font-weight: lighter;
+        
+    }
+    .button-div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        border-style:dashed;
+        border-radius: 5px;
+        margin-top: 30px;
+        max-width: 10rem;
+        padding: 3px;
+        margin-bottom: 40px;
+       
+    }
+    .portfolio{
+        padding: 25px;
+        margin: 0;
+    }
+  
+    .projects{
+        margin-left: 400px;
+        margin-right: 400px;  
+    }
+    .project-grid{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 400px;
+        margin-right: 400px;
+        background: rgba(148, 0, 211, 0);
+        padding: 50px;
+        
+    }
+    .project img{
+        width: 19em;
+        height: 20em;
+        background-color: rgb(31, 29, 29);
+        border-radius: 25px;
+        margin: 20px;
+    }
+    footer{
+        color: white;
+        position: relative;
+        width: 100vw;
+        background-color: rgb(64, 17, 139);
+        padding: 10%;
+        margin-top: 100px;
+        margin-left: 0;
+    }
+    /*-------------------------------------
+End of Media Query
+---*/}
