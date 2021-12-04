@@ -12,14 +12,26 @@ html, body{
     background-size: contain;
     overflow-x: hidden; 
     background: url(./img/mvstrokes.svg) repeat;
-    background-color: rgb(64, 17, 139);   
+    background-color: rgb(64, 17, 139);
+    
 }
-
+/*nav{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(64, 17, 139);
+    max-height: 4em;
+    min-height: 4em;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.329);
+    z-index: 100;
+    margin-bottom: 200px;
+   
+}*/
 main{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
+   
     
 }
 .hero{
@@ -29,7 +41,6 @@ main{
 .container{
     position: relative;
     padding: 50px;
-    padding-bottom: 50px;
     border-radius: 25px;
     margin: 0;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
@@ -38,6 +49,8 @@ main{
     background-image: url(img/mvstrokes.png);
     background-size:contain;
     background-color: rgb(255, 255, 255);
+   
+   
 }
 
 
@@ -49,6 +62,7 @@ main{
     background-color: rgba(255, 255, 255, 0.712);
     backdrop-filter: blur(30px) ;
     box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.151);
+    
     
 }
 .status-circle{
@@ -127,11 +141,11 @@ h2{
     padding-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight:40;
-    color: rgb(150, 150, 150);
+    color: rgb(73, 73, 73);
 }
 .view-button{
     position: relative;
-    padding: 20px;
+    padding: 70px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 2px solid rgb(0, 0, 0);
@@ -172,9 +186,10 @@ h2{
 .watermark {
     display: flex;
     justify-content: center;
-    margin-top: 87vh;
-    width: 100vw;
-    
+    margin: 0;
+    width: 100%;
+    margin-top: 5vh;
+   
 }
 
 .logo h3{
@@ -229,7 +244,7 @@ MEDIA QUERIES
             background-color: rgba(231, 231, 231, 0.315);
             backdrop-filter: blur(30px) ;
             box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.151);
-           
+            
         }
         .status-circle{
             color: #000;
@@ -306,7 +321,7 @@ MEDIA QUERIES
          padding-top: 5px;
          font-family: Arial, Helvetica, sans-serif;
          font-weight:40;
-         color: rgb(87, 87, 87);
+         color: rgb(73, 73, 73);
      }
      .view-button{
          position: relative;

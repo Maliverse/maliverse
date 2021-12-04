@@ -26,6 +26,8 @@ nav{
     min-height: 4em;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.329);
     z-index: 100;
+    background-image: url(img/color-bg.jpg);
+    background-size: cover;
    
 }
 .nav2{
@@ -111,7 +113,7 @@ main{
    
 }
 .status-circle{
-    color: #000;
+    
     border: 2px solid black;
     height: 50px;
     width: 50px;
@@ -119,6 +121,7 @@ main{
     border-style: dashed;
     background-color: lightgreen;
     background-size: 50px;
+    margin-left: 20px;
 }
 .status-circle:hover{
     border-color:  rgb(0, 128, 53);
@@ -134,7 +137,7 @@ main{
     border-radius: 360px;
     border-style: dashed;
     background-color: lightgreen;
-    margin-left: 180px;
+    margin-left: 195px;
     border-bottom-left-radius: 3px;   
     
 }
@@ -186,7 +189,7 @@ h2{
     padding-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight:40;
-    color: rgb(124, 124, 124);
+    color: rgb(73, 73, 73);
 }
 h3{
     text-align: left;
@@ -395,8 +398,8 @@ h5{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 310PX;
-    background-color: rgba(231, 231, 231, 0.315);
+    margin-top: 100PX;
+    background-color: rgba(231, 231, 231, 0.589);
     backdrop-filter: blur(30px) ;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
   
@@ -413,6 +416,7 @@ h5{
     backdrop-filter: blur(20px);
     background-color: rgba(253, 207, 2, 0.178);
     padding: auto;
+   
     
     }
     .status-circle{
@@ -424,7 +428,7 @@ h5{
         border-style: dashed;
         background-color: lightgreen;
         background-size: 50px;
-        margin-left: 80px;
+        margin-left: 70px;
     }
     .status-circle:hover{
         border-color:  rgb(0, 128, 53);
@@ -454,7 +458,7 @@ h5{
     .profile-img{
         position: relative;
         min-width: 250px;
-        max-width: 450px;
+        max-width: 450px;*/
         border-radius: 360px;
         border: 5px solid rgb(179, 55, 251);
         border-style: dashed; 
@@ -491,7 +495,7 @@ h5{
          padding-top: 5px;
          font-family: Arial, Helvetica, sans-serif;
          font-weight:40;
-         color: rgb(124, 124, 124);
+         color: rgb(73, 73, 73);
          align-self: flex-start;
      }
      h3{
