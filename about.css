@@ -13,7 +13,9 @@ html, body{
     background-size: contain;
     overflow-x: hidden;
     background: url(img/mvstrokes.png) repeat;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.781);
+   
+    
 
 }
 
@@ -33,7 +35,7 @@ nav{
 .nav2{
     position: fixed;
     width: 100%;
-    background-color: rgb(64, 17, 139);
+    background-color: rgba(32, 32, 32, 0.993);
     max-height: 4em;
     min-height: 4em;
     margin-top: 30px;
@@ -68,42 +70,49 @@ li{
 
 }
 
-section .hero{
-    position: relative;
 
-}
 main{
-    
+    padding-top: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     max-width: 100%;
-    height: 100vh;
+    height: 100%;
+    overflow-x: hidden;
+   
+
+}
+
+section .hero{
+    position: relative;
 
 }
 .container{
     position: relative;
     padding: 50px;
     padding-bottom: 50px;
+   /* border: 2px solid rgba(174, 0, 255, 0.993);
+    border-style: dashed;*/
     border-radius: 25px;
     margin: 0;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
     min-width: 200px;
     max-width: 400px;
-    background-image: url(img/mvstrokes.png);
+    background: url(img/mvstrokes.png);
     background-size: contain;
     backdrop-filter: blur(30px) ;
-   left: 50%;
-   right: 50%;
-   transform: translate(-50%);
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.075);
 }
 
 
 .frame{
     
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 360px;
     border-style: dashed;
@@ -137,7 +146,7 @@ main{
     border-radius: 360px;
     border-style: dashed;
     background-color: lightgreen;
-    margin-left: 195px;
+    margin-left: 185px;
     border-bottom-left-radius: 3px;   
     
 }
@@ -163,7 +172,7 @@ main{
     min-width: 250px;
     max-width: 250px;
     border-radius: 360px;
-    border: 5px solid rgb(179, 55, 251);
+    border: 5px solid rgba(174, 0, 255, 0.993);
     border-style: dashed;
     top: 50%;
     left: 50%;
@@ -171,105 +180,117 @@ main{
     
 }
 .strikethrough{
-    background-color: black;
-    border: 2px solid black;
+    background-color: rgb(231, 231, 231);
+    border: 2px solid rgb(231, 231, 231);
     margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 2px;
     
 }
 h1{
-   text-align: center;
-   padding-top: 40px;
-   font-family: Arial, Helvetica, sans-serif;
+   text-align: left;
+   padding-top: 0;
+   font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
-   color: rgb(89, 5, 100);
+   color: rgba(174, 0, 255, 0.993);
 }
 h2{
     text-align: center;
     padding-top: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:40;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     color: rgb(73, 73, 73);
 }
 h3{
     text-align: left;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Courier New', Courier, monospace;
    font-weight: bold;
-   color: rgb(89, 5, 100);
-   font-family: Arial, Helvetica, sans-serif;
+   color: rgba(174, 0, 255, 0.993);
     padding-top: 30px;
     
 }
 
 
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     padding-top: 10px;
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    font-weight: bold;
+    
 }
-.continue-button{
+button{
     position: relative;
+    margin-top: 30px;
     padding: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    border: 2px solid black;
-    border-style: dotted;
-    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.993);
+    border-style: dashed;
+    border-radius: 3px;
     cursor: pointer;
-    color: rgb(255, 212, 255);
-    background:rgb(110, 68, 136);
+    color: rgba(231, 231, 231, 0.993);
+    background: rgba(174, 0, 255, 0.993);
     font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold ;
 }
-.continue-button:hover{
+button:hover{
     color: rgb(255, 255, 255);
-    background: rgb(135, 47, 185);
-     box-shadow: 0 15px 30px rgba(135, 46, 138, 0.3);
-    
+    background: rgba(186, 37, 255, 0.993);
+     box-shadow: 0 15px 30px rgba(191, 0, 197, 0.322);
+     transition-duration: 0.5s;
 }
 
-
-.button-div{
+.container2{
     position: relative;
+    padding: 50px;
+    border: 2px solid rgba(174, 0, 255, 0.993);
+    border-style: dashed;
+    border-radius: 25px;
+    margin: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+    min-width: 200px;
+    background: url(img/mvstrokes.png);
+    background-size: contain;
+    backdrop-filter: blur(30px) ;
+    margin-left: px;
+}
+.contact{
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold ;
     display: flex;
     justify-content: center;
+}
+
+
+
+/*.button-div{
+  
+    display: flex;
+    justify-content: center;
+    align-content: center;
     border: 1px solid black;
     border-style:dashed;
     border-radius: 5px;
-    margin-top: 30px;
     max-width: 10rem;
-    padding: 3px;
+    
 }
 .button-div:hover{
     
     border-color: rgb(135, 47, 185);
 
-}
+}*/
+
 .portfolio{
     padding: 25px;
 }
 
 
-.project-grid{
-    position: relative;
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid rgb(127, 10, 182);
-    border-style:dashed;
-    background: rgba(243, 243, 243, 0.664);
-    border-radius: 20px 20px 20px 20px;
-   
-}
-.project img{
-    position: relative;
-    max-width: 19em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 25px;
-    margin: 10px;
-    border: 1px solid rgb(127, 10, 182);
-    border-style:dashed;
-   
-  
-}
+
 
 h4{
     font-family: Arial, Helvetica, sans-serif;
@@ -278,30 +299,6 @@ h4{
     text-align: center;
 }
 
-figcaption{
-    position: relative;
-    margin-left: 10px;
-    font-size: 20px;
-    text-align: center;
-}
-.view-button{
-    position: relative;
-    padding: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 2px solid black;
-    border-style: dotted;
-    border-radius: 10px;
-    cursor: pointer;
-    color: rgb(255, 212, 255);
-    background:rgb(110, 68, 136);
-    font-size: 20px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50% );
-    margin-bottom: 10px;
-
-}
 footer{
     color: white;
     position: relative;
@@ -337,7 +334,7 @@ h5{
     .nav2{
         position: fixed;
         width: 100%;
-        background-color: rgb(64, 17, 139);
+        background-color: rgba(32, 32, 32, 0.993);
         max-height: 7em;
         min-height: 7em;
         margin-top: 45px;
@@ -389,24 +386,40 @@ h5{
     }
     .container{
     position: relative;
-    background-color: white;
     padding: 50px;
-   
+    /* border: 2px solid rgba(174, 0, 255, 0.993);
+    border-style: dashed;*/
     border-radius: 25px;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1300px;
     max-height: 90vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-top: 100PX;
-    background-color: rgba(231, 231, 231, 0.589);
+    margin-top: 50PX;
     backdrop-filter: blur(30px) ;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
-  
+    background: url(img/mvstrokes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(202, 202, 202, 0.274);
 
     }
  
-    
+    .container2{
+        position: relative;
+        padding: 200px;
+        border: 2px solid rgba(174, 0, 255, 0.993);
+        border-style: dashed;
+        border-radius: 25px;
+        margin: 200px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+        max-width: 100%;
+        background: url(img/mvstrokes.png);
+        background-size: contain;
+        backdrop-filter: blur(30px) ;
+       
+    }
 
     .frame{
     position: relative;
@@ -414,7 +427,7 @@ h5{
     border-radius: 360px;
     border-style: dashed;
     backdrop-filter: blur(20px);
-    background-color: rgba(253, 207, 2, 0.178);
+    background-color: rgba(243, 243, 243, 0.356);
     padding: auto;
    
     
@@ -458,9 +471,9 @@ h5{
     .profile-img{
         position: relative;
         min-width: 250px;
-        max-width: 450px;*/
+        max-width: 450px;
         border-radius: 360px;
-        border: 5px solid rgb(179, 55, 251);
+        border: 5px solid rgba(174, 0, 255, 0.993);
         border-style: dashed; 
         padding: 0px;
 
@@ -482,41 +495,38 @@ h5{
     }
     h1{
         text-align: left;
-        padding-top: 40px;
-        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 0;
+        font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
-        font-size: 30px;
-        color: rgb(89, 5, 100);
+        color: rgba(174, 0, 255, 0.993);
         align-self: flex-start;
-        align-content: center;
+     }
      }
      h2{
          text-align: left;
          padding-top: 5px;
-         font-family: Arial, Helvetica, sans-serif;
-         font-weight:40;
+         font-family: 'Courier New', Courier, monospace;
+         font-weight:bold;
          color: rgb(73, 73, 73);
          align-self: flex-start;
      }
      h3{
         text-align: left;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
-        color: rgb(89, 5, 100);
-        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(174, 0, 255, 0.993);
         padding-top: 30px;
-        font-size: 25px;
-        
+        font-size: 25px;    
     }
-    .about-me{
-        font-family: Arial, Helvetica, sans-serif;
+    p{
+        font-family: 'Courier New', Courier, monospace;
         margin: 0;
         margin-top: 0;
-        font-size: 25px;
-        font-weight: lighter;
+        font-size: 20px;
+        font-weight: bold;
         
     }
-    .button-div{
+   /* .button-div{
         position: relative;
         display: flex;
         justify-content: center;
@@ -528,33 +538,26 @@ h5{
         padding: 3px;
         margin-bottom: 40px;
        
+    }*/
+    .tech-stack{
+        padding: 50px 50px;
+        margin-top: -10;
+        background: rgba(8, 8, 8, 0.993);
+        
+        margin: 0;
+        
     }
+    .tech-stack div p{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+   
     .portfolio{
         padding: 25px;
         margin: 0;
     }
   
-    .projects{
-        margin-left: 400px;
-        margin-right: 400px;  
-    }
-    .project-grid{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 400px;
-        margin-right: 400px;
-        background: rgba(148, 0, 211, 0);
-        padding: 50px;
-        
-    }
-    .project img{
-        width: 19em;
-        height: 20em;
-        background-color: rgb(31, 29, 29);
-        border-radius: 25px;
-        margin: 20px;
-    }
     footer{
         color: white;
         position: relative;
@@ -566,4 +569,4 @@ h5{
     }
     /*-------------------------------------
 End of Media Query
----*/}
+---*/
