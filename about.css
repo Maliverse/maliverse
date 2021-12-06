@@ -13,7 +13,7 @@ html, body{
     background-size: contain;
     overflow-x: hidden;
     background: url(img/mvstrokesb.png) repeat;
-    background-color: rgba(46, 46, 46, 0.781);
+    background-color: rgba(24, 24, 24, 0.781);
    
     
 
@@ -43,9 +43,13 @@ nav{
     
 }
 .mv-logo-colored{
-    max-width: 100%;
+    max-width: 100vw;
     max-height: 100vh;
-    
+    left: 50%;
+    right: 50%;
+    transform: translate(-50% -50%);
+    margin: 0;
+    max-width: 100%;
 }
 .navlogo{
     padding-top: 4px;
@@ -101,7 +105,8 @@ section .hero{
     min-width: 200px;
     max-width: 400px;
     background: url(img/mvstrokes.png);
-    background-size: contain;
+    background-size:inherit;
+    background-repeat: no-repeat;
     backdrop-filter: blur(30px) ;
     left: 50%;
     right: 50%;
@@ -121,6 +126,7 @@ section .hero{
     box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.151);
    
 }
+
 .status-circle{
     
     border: 2px solid black;
@@ -146,7 +152,7 @@ section .hero{
     border-radius: 360px;
     border-style: dashed;
     background-color: lightgreen;
-    margin-left: 185px;
+    margin-left: 183px;
     border-bottom-left-radius: 3px;   
     
 }
@@ -218,6 +224,7 @@ p{
     font-size: 20px;
     font-weight: bold;
     color: rgb(235, 235, 235);
+    padding-top: 10px;
 }
 
 button{
@@ -244,9 +251,9 @@ button:hover{
 }
 .tech-stack{
     padding: 50px 50px;
-    margin-top: -10;
+    margin-top: 40px;
     background: rgba(8, 8, 8, 0.993);
-    margin: 0;
+    
     
 }
 .tech-stack-p{
@@ -254,6 +261,7 @@ button:hover{
     text-align: center;
     font-size: 20px;
 }
+
 
 .container2{
     position: relative;
@@ -267,8 +275,13 @@ button:hover{
     background: url(img/mvstrokes.png);
     background-size: contain;
     backdrop-filter: blur(30px) ;
-    margin-left: px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+
 }
+
 .contact{
     position: relative;
     cursor: pointer;
@@ -278,32 +291,6 @@ button:hover{
     display: flex;
     justify-content: center;
 }
-
-
-
-/*.button-div{
-  
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    border: 1px solid black;
-    border-style:dashed;
-    border-radius: 5px;
-    max-width: 10rem;
-    
-}
-.button-div:hover{
-    
-    border-color: rgb(135, 47, 185);
-
-}*/
-
-.portfolio{
-    padding: 25px;
-}
-
-
-
 
 h4{
     font-family: Arial, Helvetica, sans-serif;
@@ -400,8 +387,6 @@ h5{
     .container{
     position: relative;
     padding: 50px;
-    /* border: 2px solid rgba(174, 0, 255, 0.993);
-    border-style: dashed;*/
     border-radius: 25px;
     width: 100%;
     max-width: 1300px;
@@ -416,23 +401,9 @@ h5{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(202, 202, 202, 0.274);
-
+    
     }
  
-    .container2{
-        position: relative;
-        padding: 200px;
-        border: 2px solid rgba(174, 0, 255, 0.993);
-        border-style: dashed;
-        border-radius: 25px;
-        margin: 200px;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
-        max-width: 100%;
-        background: url(img/mvstrokes.png);
-        background-size: contain;
-        backdrop-filter: blur(30px) ;
-       
-    }
 
     .frame{
     position: relative;
@@ -494,8 +465,8 @@ h5{
     }
 
     .strikethrough{
-        background-color: rgb(107, 107, 107);
-        border: 1px solid rgb(107, 107, 107);
+        background-color: rgb(214, 214, 214);
+        border: 1px solid rgb(214, 214, 214);
         margin-top: 0px;
         border-radius: 2px; 
         height: 40vh;  
@@ -506,20 +477,45 @@ h5{
         max-height: 500px;
         
     }
+    h1{
+        text-align: left;
+        padding-top: 0;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: lightgreen;
+        align-self: flex-start;
+        font-size: 75px;
+     }
+     h2{
+         text-align: left;
+         padding-top: 5px;
+         font-family: 'Courier New', Courier, monospace;
+         font-weight:bold;
+         color: rgb(235, 235, 235);
+         align-self: flex-start;
+         font-size: 40px; 
+     }
+     h3{
+        text-align: left;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: lightgreen;
+        padding-top: 30px;
+        font-size: 25px;    
+    }
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(235, 235, 235);
+        padding-top: 10px;
+    }
+    .project-title{
+        font-size: 30px; 
+    }
 
-   /* .button-div{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        border: 1px solid black;
-        border-style:dashed;
-        border-radius: 5px;
-        margin-top: 30px;
-        max-width: 10rem;
-        padding: 3px;
-        margin-bottom: 40px;
-       
-    }*/
     .tech-stack{
         padding: 50px 50px;
         margin-top: -10;
@@ -537,7 +533,38 @@ h5{
         padding: 25px;
         margin: 0;
     }
-  
+    .container2{
+        position: relative;
+        padding: 50px;
+        border: 2px solid rgba(174, 0, 255, 0.993);
+        border-style: dashed;
+        border-radius: 25px;
+        margin: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+        max-width: 100%;
+        background: url(img/mvstrokes.png);
+        background-size: contain;
+        backdrop-filter: blur(30px) ;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+       
+       
+    }
+    .project-img-frame{
+        position: relative;
+        padding: 50px;
+        background:rgb(231, 231, 231);
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+       
+    }
+
+    .project-text{
+        max-width: 50%;
+    }
     footer{
         color: white;
         position: relative;
