@@ -64,15 +64,13 @@ nav{
 .hamburger{
         display: block;
         padding: 0;
-        max-width: 25px;
-        min-width: 25px;
         filter: invert(1);
         cursor: pointer;
         background: none;
         border: none;
         display: flex;
         align-items: center;
-        margin: 10px;
+        margin-right: 10px;
        
 }
 
@@ -113,6 +111,7 @@ li{
    justify-content: space-between;
    padding: 10px;
    color: rgb(231, 231, 231);
+   
 }
 li:hover{
     color: white;
