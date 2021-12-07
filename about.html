@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >About</title>
-    <script src="https://use.fontawesome.com/3127b1d26e.js"></script>
     <link rel="stylesheet" href="about.css">
-   
+    <script src="script.js"></script>
 </head>
 <body>
    
         <nav>
             <img class="navlogo" src="img/mvlogo.svg" alt="">
            
-            
-            <ul>
+            <button class="hamburger" id="hamburger">
+                <img src="img/bars-solid.svg" alt="bars-solid">
+               </button>
+               
+            <ul class="nav-ul" id="nav-ul">
                 <li>Home</li>
                 <li>About</li>
-                <li>Contact</li>
-              
+                <li>Contact</li>  
             </ul>
         </nav>
         <section class="nav2">
-            <img class="mv-logo-colored" src="img/mv-logo-colored.png" alt="Maliverse Colored Logo">
+            <div >
+                <img class="mv-logo-colored" src="img/mv-logo-colored.png" alt="Maliverse Colored Logo">
+            </div>
         </section>
+     
    
     <main>
         
@@ -97,12 +101,12 @@
         
         <div class="project-text">
             <h1 class="project-title">Echohealth Website</h1> 
-            <p>
+            <h2 class="h2project">
                 Lorem ipsum dolor sit amet, consectetuer
                 adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa. 
                
-            </p>
+            </h2>
             <div class="project-btns">
                 <button>Figma</button>
                 <button>Live-Site</button>
@@ -126,12 +130,12 @@
         
         <div class="project-text">
             <h1 class="project-title">Creative Impact Network</h1> 
-            <p>
+            <h2 class="h2project">
                 Lorem ipsum dolor sit amet, consectetuer
                 adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa. 
                
-            </p>
+            </h2>
             <div class="project-btns">
                 <button>Figma</button>
                 <button>Live-Site</button>
@@ -153,13 +157,13 @@
         </div>
         
         <div class="project-text">
-            <h1 class="project-title">Karis E. Amehw-ealth</h1> 
-            <p>
+            <h1 class="project-title">Project name</h1> 
+            <h2 class="h2project">
                 Lorem ipsum dolor sit amet, consectetuer
                 adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa. 
                
-            </p>
+            </h2>
             <div class="project-btns">
                 <button>Figma</button>
                 <button>Live-Site</button>
@@ -181,6 +185,21 @@
        
     </footer>
     </main>
-   
+    
+   <script>
+
+       const hamburger = document.getElementById('hamburger');
+        const navUL = document.getElementById('nav-ul');
+        const cancel = document.getElementById('cancel');
+
+     
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        });
+    
+   </script>
+
+  
+  
 </body>
 </html>
