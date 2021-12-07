@@ -57,7 +57,12 @@ nav{
     min-width: 70px;
    
 }
+.nav-menu{
+    display: block;
+    position: relative;
+}
 .hamburger{
+        display: block;
         padding: 0;
         max-width: 25px;
         min-width: 25px;
@@ -67,14 +72,14 @@ nav{
         border: none;
         display: flex;
         align-items: center;
-        margin: 5px;
-        
+        margin: 10px;
+       
 }
 
 .hamburger:hover{
     background: none;
-    max-width: 25px;
     min-width: 25px;
+    max-width: 25px;
     filter: invert(1);
     cursor: pointer;
     
