@@ -652,7 +652,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 153, 0, 0.993);
+    background: rgba(0, 0, 0, 0.993);
     backdrop-filter: blur(30px) ;
     border: 3px solid rgb(0, 0, 0);
     border-style: dashed;
