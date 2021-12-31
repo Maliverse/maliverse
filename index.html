@@ -4,49 +4,232 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title >Maliverse</title>
+    <link rel="shortcut icon" href="img/favicon3.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-   <nav>
-       
-   </nav>
-        <main>
-        <section class="hero">
-                        <div class="container">
-                            
-                            
-                            <div class="frame"> 
-                                <div class="status-circle"></div>
-                                <img src="img/shades3.jpg"
-                                class="profile-img" alt="profile-img"> 
-                                <div class="status-circle2"><div class="bubble"></div></div>
-                            </div>
-                            
-                                <div class="text"></div>
-                                <h1>Akwunte Amali</h1>
-                                <h2>Frontend Developer / UI /UX Designer</h2>   
-                            <div class="button-div">
-                                <a href="about.html">
-                                <button class="view-button"> Enter</button>
-                                </a>
-                                <!----onclick="location.href='http://127.0.0.1:5500/about.html'"---->
-                            </div>  
-                            
-                        </div>
+   
+        <nav>
+            <img class="navlogo" src="img/mvlogo.svg" alt="">
+           
+            
+               <div class="nav-menu">
+                <button class="hamburger" id="hamburger">
+                    <img src="img/ bars-solid.svg" alt="bars-solid">
+                   </button>
+    
+               </div>
+               
+            <ul class="nav-ul" id="nav-ul">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>  
+            </ul>
+        </nav>
+        <section class="nav2">
+            <div >
+                <img class="mv-logo-colored" src="img/mv-logo-colored.png" alt="Maliverse Colored Logo">
+            </div>
+        </section>
+     
+   
+    <main>
+        
+           <section class="hero">
+            <div class="container">
 
-                    </main>
-                    
-            <div class="watermark">
-                    <div class="logo">
-                        <img src="img/mvlogo.svg" class="logo" alt="maliverse logo">
-                        <div class="watermark-divider"></div>
-                        <h3>Designed By Maliverse</h3>
-                    </div> 
-                    
+                <div class="frame"> 
+                    <div class="bulbs"><div class="status-circle"></div>
+                            <img src="img/avatartrim.jpg"
+                            class="profile-img" alt="profile-img"> 
+
+                            <div class="status-circle2"><div class="bubble"></div></div>
+                    </div>
+                           
                 </div>
-    </section>
- 
-</body>
+           
+                           
+                               <div class="strikethrough"></div>
+                               
+                    <div class="my-name">
 
+                                   <h1>Akwunté Amali </h1>
+                                   <h2>Frontend Developer & <br>
+                                    UI / UX Designer🤘🏻 </h2>
+                        <!---
+                          <div class="about-me">
+                                  <h3>About Me</h3>
+                                   <p> 
+                                       Akwunté “Maliverse” Amali is highly intrigued by technology,
+                                       branding and innovation and the impact that design has on each one. 
+                                       He is dedicated to building visually stunning user-centered
+                                       interfaces, relevant for the modern age.
+                                   </p>  
+                               </div>
+                        --> 
+                             
+           
+                           <div class="button-div">
+                               <a href="index.html">
+                               <button class="continue-button"
+                               >Continue
+                               </button> 
+                               </a>
+                               </div> 
+                               <!--onclick="location.href='#'"--->        
+                     </div>
+           </section> 
+
+           <section class="tech-stack">
+               <div>
+                  <p class="tech-stack-p">
+                      Design - Build - Launch
+                  </p>
+               </div>
+              
+           </section>
+
+           <div class="personal-details">
+               <div class="frame2">
+                <div class="svg">
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_tn8v6rdu.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+                </div>
+               </div>
+            
+            <div class="about-me">
+               <!---<h3>About Me</h3>---> 
+                 <p class="about-paragraph"> 
+                     Akwunté “Maliverse” Amali is highly intrigued by technology,
+                     branding and innovation and the impact that design has on each one. <br>
+                     He is dedicated to building visually stunning user-centered
+                     products, relevant for the modern age.
+                 </p>  
+             </div>
+           </div>
+           
+
+ <section class="portfolio">
+    
+<!------
+    FUN
+    WEB
+    APPS
+    SECTION ------->
+       
+       
+       
+       <div class="container2">
+        <div class="project-img-frame">
+
+        </div>
+        
+        <div class="project-text">
+            <h1 class="project-title">Echohealth Website</h1> 
+            <h2 class="h2project">
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. 
+               
+            </h2>
+            <div class="project-btns">
+                <button class="btn btn-success" onclick=" window.open('https://www.figma.com/proto/NVzRV33lQ8KWowmkuR0M3q/ECOHEALTH-WEB?node-id=38%3A6&starting-point-node-id=38%3A6','_blank')">Figma</button>
+                <button>Live-Site</button>
+            </div>
+            
+        </div>  
+           
+           
+       </div>
+
+<!------
+    UI / UX
+    project-title
+    SECTION ------->
+   
+       
+    <div class="container2">
+        <div class="project-img-frame">
+
+        </div>
+        
+        <div class="project-text">
+            <h1 class="project-title">Creative Impact Network</h1> 
+            <h2 class="h2project">
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. 
+               
+            </h2>
+            <div class="project-btns">
+                <button>Figma</button>
+                <button>Live-Site</button>
+            </div>
+            
+        </div>  
+           
+           
+       </div>
+<!------
+    LANDING
+    PAGES
+    SECTION ------->
+
+    
+    <div class="container2">
+        <div class="project-img-frame">
+
+        </div>
+        
+        <div class="project-text">
+            <h1 class="project-title">Project name</h1> 
+            <h2 class="h2project">
+                Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. 
+               
+            </h2>
+            <div class="project-btns">
+                <button>Figma</button>
+                <button>Live-Site</button>
+            </div>
+            
+        </div>  
+           
+           
+       </div>
+
+  </section>
+<section>
+    <footer>
+        <div class="footer-stuff">
+            
+            <div class="contact"> Connect With Me </div>
+
+           
+        </div>
+       
+    </footer>
+</section>
+  
+    </main>
+    
+   <script>
+
+       const hamburger = document.getElementById('hamburger');
+        const navUL = document.getElementById('nav-ul');
+        const cancel = document.getElementById('cancel');
+
+     
+        hamburger.addEventListener('click', () => {
+            navUL.classList.toggle('show');
+        });
+    
+   </script>
+
+
+</body>
 </html>
