@@ -14,7 +14,7 @@
 <body>
    
         <nav>
-            <img class="navlogo" src="img/mvlogo.svg" alt="">
+          <a href="#container"><img class="navlogo" src="img/mvlogo.svg" alt="maliverse-logo"></a>  
            
             
                <div class="nav-menu">
@@ -25,22 +25,24 @@
                </div>
                
             <ul class="nav-ul" id="nav-ul">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>  
+                <li> <a href="#container">Home</a></li>
+                <li> <a href="#tech-stack-p-two"> About</a></li>
+                <li><a href="#container2">Projects</a></li>  
             </ul>
         </nav>
         <section class="nav2">
-            <div >
-                <img class="mv-logo-colored" src="img/mv-logo-colored.png" alt="Maliverse Colored Logo">
-            </div>
+           
         </section>
      
-   
+   <div>
+    <div >
+        <img class="mv-logo-colored" src="img/mv-logo-colored.png" alt="Maliverse Colored Logo">
+    </div>
+   </div>
     <main>
         
            <section class="hero">
-            <div class="container">
+            <div id="container" class="container">
 
                 <div class="frame"> 
                     <div class="bulbs"><div class="status-circle"></div>
@@ -49,6 +51,7 @@
 
                             <div class="status-circle2"><div class="bubble"></div></div>
                     </div>
+                
                            
                 </div>
            
@@ -60,38 +63,43 @@
                                    <h1>Akwunté Amali </h1>
                                    <h2>Frontend Developer & <br>
                                     UI / UX Designer🤘🏻 </h2>
-                        <!---
-                          <div class="about-me">
-                                  <h3>About Me</h3>
-                                   <p> 
-                                       Akwunté “Maliverse” Amali is highly intrigued by technology,
-                                       branding and innovation and the impact that design has on each one. 
-                                       He is dedicated to building visually stunning user-centered
-                                       interfaces, relevant for the modern age.
-                                   </p>  
-                               </div>
-                        --> 
-                             
+                                    <div class="hero-icons">
+                                        <div>
+                                         <a href="https://twitter.com/Whatismalidoing" target="_blank"><img src="img/social-icons/ico-twitter-pink.svg" alt="ico-twitter-pink"> </a>   
+                                        </div>
+                                       <div>
+                                          <a href="https://www.linkedin.com/in/akwunteamali/"target="_blank"><img src="img/social-icons/ico-linkedin-pink.svg" target="_blank" alt="ico-linkedin-pink"></a> 
+                                       </div>
+                                       <div>
+                                          <a href="https://www.behance.net/akwunte"target="_blank"> <img src="img/social-icons/behance2.svg" target="_blank" alt="behance"></a> 
+                                       </div>
+                                       <div>
+                                         <a href="https://github.com/Maliverse"target="_blank"> <img src="img/social-icons/github2.svg" target="_blank" alt="github"></a>  
+                                       </div>
+                                    </div>
            
                            <div class="button-div">
-                               <a href="index.html">
+                               <a href="#container2">
                                <button class="continue-button"
-                               >Continue
+                               >View Projects
                                </button> 
                                </a>
-                               </div> 
+                            
+                             
+                             
                                <!--onclick="location.href='#'"--->        
                      </div>
            </section> 
 
-           <section class="tech-stack">
+           <section id="tech-stack-p-two" class="tech-stack">
                <div>
-                  <p class="tech-stack-p">
+                  <p id="tech-stack-p" class="tech-stack-p">
                       Design - Build - Launch
                   </p>
                </div>
               
            </section>
+          
 
            <div class="personal-details">
                <div class="frame2">
@@ -102,42 +110,52 @@
             
             <div class="about-me">
                <!---<h3>About Me</h3>---> 
-                 <p class="about-paragraph"> 
-                     Akwunté “Maliverse” Amali is highly intrigued by technology,
-                     branding and innovation and the impact that design has on each one. <br>
+                 <p class="about-paragraph" id="about-paragraph"> 
+                     Akwunté <strong>“Maliverse” </strong>  Amali is highly intrigued by technology,
+                     branding, innovation and the impact that design has on each one. <br> <br>
                      He is dedicated to building visually stunning user-centered
                      products, relevant for the modern age.
                  </p>  
              </div>
+             <div class="random-circles">
+
+             </div>
            </div>
            
-
+           <section class="tech-stack">
+            <div>
+               <p class="tech-stack-p-two" id="tech-stack-p-two">
+                   Recent Projects
+               </p>
+            </div>
+           
+        </section>
  <section class="portfolio">
-    
+   
 <!------
     FUN
     WEB
     APPS
     SECTION ------->
        
+   
+    
        
-       
-       <div class="container2">
-        <div class="project-img-frame">
-
+       <div id="container2" class="container2">
+        <div class="project-img-frame echohealth">
+            
         </div>
         
         <div class="project-text">
             <h1 class="project-title">Echohealth Website</h1> 
             <h2 class="h2project">
-                Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean massa. 
+               Brand Identity and landing page design for Echohealth,
+               a health tech platform.
                
             </h2>
             <div class="project-btns">
-                <button class="btn btn-success" onclick=" window.open('https://www.figma.com/proto/NVzRV33lQ8KWowmkuR0M3q/ECOHEALTH-WEB?node-id=38%3A6&starting-point-node-id=38%3A6','_blank')">Figma</button>
-                <button>Live-Site</button>
+                <button class="btn btn-success" onclick=" window.open('https://www.figma.com/file/NVzRV33lQ8KWowmkuR0M3q/ECOHEALTH-WEB?node-id=0%3A1','_blank')">Figma</button>
+                <button class="btn btn-success" onclick=" window.open('https://maliverse.github.io/echohealth/#','_blank')">Live-Site</button>
             </div>
             
         </div>  
@@ -152,16 +170,14 @@
    
        
     <div class="container2">
-        <div class="project-img-frame">
+        <div class="project-img-frame blank-project">
 
         </div>
         
         <div class="project-text">
-            <h1 class="project-title">Creative Impact Network</h1> 
+            <h1 class="project-title">Project</h1> 
             <h2 class="h2project">
-                Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean massa. 
+               Coming soon
                
             </h2>
             <div class="project-btns">
@@ -180,16 +196,14 @@
 
     
     <div class="container2">
-        <div class="project-img-frame">
+        <div class="project-img-frame blank-project">
 
         </div>
         
         <div class="project-text">
-            <h1 class="project-title">Project name</h1> 
+            <h1 class="project-title">Project</h1> 
             <h2 class="h2project">
-                Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean massa. 
+               Coming soon
                
             </h2>
             <div class="project-btns">
@@ -208,9 +222,22 @@
         <div class="footer-stuff">
             
             <div class="contact"> Connect With Me </div>
-
-           
-        </div>
+            <div class="social-icons">
+                <div>
+                 <a href="https://twitter.com/Whatismalidoing" target="_blank"><img src="img/social-icons/ico-twitter-pink.svg" alt="ico-twitter-pink"> </a>   
+                </div>
+               <div>
+                  <a href="https://www.linkedin.com/in/akwunteamali/"><img src="img/social-icons/ico-linkedin-pink.svg" target="_blank" alt="ico-linkedin-pink"></a> 
+               </div>
+               <div>
+                  <a href="https://www.behance.net/akwunte"> <img src="img/social-icons/behance2.svg" target="_blank" alt="behance"></a> 
+               </div>
+               <div>
+                 <a href="https://github.com/Maliverse"> <img src="img/social-icons/github2.svg" target="_blank" alt="github"></a>  
+               </div>
+            </div>
+            </div>
+      
        
     </footer>
 </section>
