@@ -435,10 +435,7 @@ footer{
 
 
 @media(min-width:80rem){
-    html, body{
-        background-color: rgb(255, 255, 255);
-        overflow-x: hidden;
-    }
+    
     nav{
         position: static;
         background-color: rgb(64, 17, 139);
@@ -767,6 +764,7 @@ footer{
     border-top-left-radius: 50px ;
     border-style: dashed;
     backdrop-filter: blur(20px);
+    position: relative;
  
 }
 
