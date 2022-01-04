@@ -783,7 +783,7 @@ footer{
     border-top-left-radius: 50px ;
     border-style: dashed;
     backdrop-filter: blur(20px);
- 
+ position: relative;
     
  
 }
