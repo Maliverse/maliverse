@@ -168,6 +168,17 @@ section .hero{
     
   
 }
+.frame2{
+    position: relative;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100% ;
+    backdrop-filter: blur(20px);
+    background-color: rgb(148, 57, 223);
+    border: 24px solid black;
+    border-style: dashed;
+   
+}  
 .status-circle{
     
     border: 2px solid black;
@@ -432,7 +443,7 @@ footer{
 -----------------------------------------------------*/
 
 
-@media(min-width:80rem){
+@media(min-width:60rem){
     
     nav{
         position: static;
@@ -719,17 +730,14 @@ footer{
     background-color: rgb(148, 57, 223);
     border: 24px solid black;
     border-style: dashed;
-  
-    
+   
 }  
 .svg{
    
-    width: 800px;
-    height: 800px;
-    max-width: 100vw;
-   /* border: 1px solid rgb(0, 0, 0);
-    border-bottom-right-radius: 100%;
-    border-style: dashed;*/
+
+    height: 700px;
+   width: 100%;
+
    
 
 }
@@ -753,25 +761,39 @@ footer{
     border-radius: 100%;
     border: 24px solid rgb(0, 0, 0);
     border-style: dashed;
+   
 }
 .about-me{
     padding: 200px; 
-    max-width: 50vw;
+    max-width: 800px;
+    margin: 0;
 }
 .about-paragraph{
     color: rgb(0, 0, 0);
     /*font-size: 30px;*/
-    background: rgb(144, 238, 144);
+    background: rgb(248, 193, 11);
     padding: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px ;
     border-style: dashed;
     backdrop-filter: blur(20px);
-    position: relative;
+ 
+    
  
 }
 
+}
+@media(min-width: 30rem){
+    .personal-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-paragraph{
+       
+    }
 }
     /*-------------------------------------
 End of Media Query
