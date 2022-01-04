@@ -782,17 +782,7 @@ footer{
  
 }
 
-}
-@media(min-width: 30rem){
-    .personal-details{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .about-paragraph{
-       
-    }
+
 }
     /*-------------------------------------
 End of Media Query
