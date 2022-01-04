@@ -327,7 +327,7 @@ button:hover{
     border-style: dashed;
     border-radius: 25px;
     margin: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+    
     min-width: 200px;
     background: url(img/mvstrokes.png);
     background-size: contain;
@@ -653,7 +653,6 @@ footer{
         border-radius: 25px;
         margin: 0;
         margin-top: 10px;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
         background: url(img/mvstrokes.png);
         background-size: contain;
         backdrop-filter: blur(30px) ;
@@ -667,6 +666,13 @@ footer{
         transform: translate(-50%);
     
        
+    }
+    .My-Projects:hover{
+        background:  rgba(209, 159, 255, 0.144) ;
+        color: white;
+        transition-duration: 0.3s;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+        max-width: 1350px;
     }
     .project-img-frame {
         
