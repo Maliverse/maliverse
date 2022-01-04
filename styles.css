@@ -735,7 +735,8 @@ footer{
     background-color: rgb(148, 57, 223);
     border: 24px solid black;
     border-style: dashed;
-   
+   max-width: 760px;
+   max-height: 900px;
 }  
 .svg{
    
