@@ -56,6 +56,7 @@ nav{
    margin-bottom: 200px;
    width: 100%;
    
+   
 }
 .navlogo{
  
@@ -140,10 +141,10 @@ section .hero{
 
 }
 .container{
-   position: relative;
+  position: relative;
     padding: 50px;
     padding-bottom: 50px;
-   /* border: 2px solid rgba(174, 0, 255, 0.993);
+    padding-right: 50px; /* border: 2px solid rgba(174, 0, 255, 0.993);
     border-style: dashed;*/
     border-radius: 25px;
     margin: 0;
@@ -156,7 +157,7 @@ section .hero{
     backdrop-filter: blur(30px) ;
   left: 50%;
   right: 50%;
-  transform: translate(-48%);
+  transform: translate(-50%);
     background-color: rgba(255, 255, 255, 0.849);
 }
 
