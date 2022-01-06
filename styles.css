@@ -43,7 +43,7 @@ nav{
 }
 .nav2{
     position: fixed;
-    width: 98vw;
+    width: 100vw;
     background-color: rgba(32, 32, 32, 0.993);
     max-height: 5em;
     min-height: 5em;
@@ -140,7 +140,7 @@ section .hero{
 
 }
 .container{
-    position: relative;
+   position: relative;
     padding: 50px;
     padding-bottom: 50px;
    /* border: 2px solid rgba(174, 0, 255, 0.993);
@@ -154,9 +154,9 @@ section .hero{
     background-size:contain;
     background-repeat: repeat;
     backdrop-filter: blur(30px) ;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%);
+  left: 50%;
+  right: 50%;
+  transform: translate(-48%);
     background-color: rgba(255, 255, 255, 0.849);
 }
 
@@ -297,7 +297,12 @@ p{
     color: rgb(15, 15, 15);
    
 }
-
+.js-tag{
+    font-size: 10px;
+}
+span{
+    color: rgb(71, 202, 71);
+}
 button{
     position: relative;
     padding: 20px;
@@ -476,7 +481,7 @@ footer{
     }
     .mv-logo-colored{
         width: 100%;
-        padding: 400px;
+      
         margin-top: -400px;
     }
     
@@ -680,7 +685,7 @@ footer{
         left: 50%;
         right: 50%;
         transform: translate(-50%);
-    
+        background-color: rgba(255, 255, 255, 0.849)
        
     }
     .My-Projects:hover{
@@ -764,7 +769,10 @@ footer{
     height: 500px;
     width: 500px;
     margin-left: -500px;
-    border-radius: 100%;
+  
+    border-top-left-radius: 360px ;
+    border-bottom-left-radius: 360px;
+    border-top-right-radius: 360px;
     border: 24px solid rgb(0, 0, 0);
     border-style: dashed;
    
