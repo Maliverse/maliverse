@@ -454,7 +454,7 @@ footer{
 -----------------------------------------------------*/
 
 
-@media(min-width:70rem){
+@media(min-width:60rem){
     
     nav{
         position: static;
