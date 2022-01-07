@@ -13,7 +13,7 @@ html{
     background-size: contain;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: rgba(250, 250, 250, 0.781);
+  
     
 }
 
@@ -21,7 +21,7 @@ body{
     margin: 0;
     padding: 0;
     background-size: contain;
-    background-color: rgba(250, 250, 250, 0.781);
+    background-color: rgb(255, 255, 255);
 }
 nav{
     position: fixed;
@@ -259,7 +259,7 @@ h1{
     padding-top: 0;
     font-family: 'Poppins', sans-serif;
     
-    color: rgb(71, 202, 71);
+    color: rgb(0, 0, 0);
     align-self: flex-start;
  }
  h2{
@@ -267,7 +267,7 @@ h1{
      padding-top: 5px;
      font-family: 'Courier New', Courier, monospace;
      font-weight:bold;
-     color: rgb(0, 0, 0);
+     color: rgb(119, 119, 119);
      align-self: flex-start;
      margin-bottom: 20px;
  }
@@ -614,7 +614,7 @@ footer{
         padding-top: 0;
         font-family: 'Poppins', sans-serif;
         
-        color: rgb(71, 202, 71);
+        color: rgba(0, 0, 0, 0.993);
         align-self: flex-start;
         font-size: 75px;
      }
@@ -623,7 +623,7 @@ footer{
          padding-top: 5px;
          font-family: 'Courier New', Courier, monospace;
          font-weight:bold;
-         color: rgb(70, 70, 70);
+         color: rgb(119, 119, 119);
          align-self: flex-start;
          font-size: 40px; 
      }
