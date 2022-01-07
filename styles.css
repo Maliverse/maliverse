@@ -21,7 +21,7 @@ body{
     margin: 0;
     padding: 0;
     background-size: contain;
-    background-color: rgb(118, 118, 118);
+    background-color: rgb(82, 82, 82);
 }
 nav{
     position: fixed;
@@ -158,7 +158,7 @@ section .hero{
   left: 50%;
   right: 50%;
   transform: translate(-50%);
-    background-color: rgba(255, 255, 255, 0.842);
+    background-color: rgba(255, 255, 255, 0.987);
 }
 
 
@@ -254,14 +254,23 @@ section .hero{
     border-radius: 2px;
     
 }
+
 h1{
     text-align: left;
     padding-top: 0;
     font-family: 'Poppins', sans-serif;
     
-    color: rgb(0, 0, 0);
+    color: rgba(174, 0, 255, 0.993);
     align-self: flex-start;
  }
+ .my-name-hero{
+    text-align: left;
+    padding-top: 0;
+    font-family: 'Poppins', sans-serif;
+    
+    color: rgb(0, 0, 0);
+    align-self: flex-start; 
+}
  h2{
      text-align: left;
      padding-top: 5px;
@@ -351,7 +360,7 @@ button:hover{
     border-radius: 25px;
     margin: 20px;
     min-width: 200px;
-    background: rgba(255, 255, 255, 0.76) url(img/mvstrokes.png);
+    background: rgb(255, 255, 255) url(img/mvstrokes.png);
     background-size: contain;
     backdrop-filter: blur(30px) ;
     display: flex;
@@ -614,7 +623,7 @@ footer{
         padding-top: 0;
         font-family: 'Poppins', sans-serif;
         
-        color: rgba(0, 0, 0, 0.993);
+        color: rgba(174, 0, 255, 0.993);
         align-self: flex-start;
         font-size: 75px;
      }
@@ -686,11 +695,11 @@ footer{
         left: 50%;
         right: 50%;
         transform: translate(-50%);
-        background-color: rgba(255, 255, 255, 0.849)
+        background-color: rgb(255, 255, 255)
        
     }
     .My-Projects:hover{
-        background:   rgba(250, 225, 179, 0.76) url(img/mvstrokes.png);
+        background:   #fffffe url(img/mvstrokes.png);
         transition-duration: 0.3s;
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
         max-width: 1350px;
