@@ -21,7 +21,7 @@ body{
     margin: 0;
     padding: 0;
     background-size: contain;
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(255, 255, 255);
 }
 nav{
     position: fixed;
@@ -149,8 +149,8 @@ section .hero{
     border-radius: 25px;
     margin: 0;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
-    min-width: 200px;
-    max-width: 400px;
+    min-width: 800px;
+    max-width: 600px;
     background: url(img/mvstrokes.png);
     background-size:contain;
     background-repeat: repeat;
@@ -159,6 +159,11 @@ section .hero{
   right: 50%;
   transform: translate(-50%);
     background-color: rgba(255, 255, 255, 0.987);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-style: dashed;
 }
 
 
@@ -212,7 +217,7 @@ section .hero{
     border-radius: 360px;
     border-style: dashed;
     background-color: lightgreen;
-    margin-left: 170px;
+    margin-left: 180px;
     border-bottom-left-radius: 3px;
   
     
@@ -252,7 +257,7 @@ section .hero{
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 2px;
-    
+    min-width: 300px;
 }
 
 h1{
@@ -525,8 +530,8 @@ footer{
     padding: 100px;
     padding-left: 200px;
     padding-right: 200px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
     max-width: 1600px;
     max-height: 100%;
     display: flex;
@@ -543,6 +548,8 @@ footer{
     left: 50%;
     right: 50%;
     transform: translate(-50%);
+    border: 5px solid black;
+    border-style: dashed;
     }
  
 
@@ -616,7 +623,7 @@ footer{
         align-self: center;
         margin-right:50px;
         max-height: 500px;
-        
+        min-width: 2px;
     }
     h1{
         text-align: left;
