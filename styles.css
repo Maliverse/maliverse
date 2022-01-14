@@ -17,11 +17,11 @@ html{
     
 }
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 8px;
   background: white;
 }
 ::-webkit-scrollbar-track{
-    border: 3px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-style: dashed;
 }
 ::-webkit-scrollbar-thumb{
@@ -561,7 +561,6 @@ footer{
     }
     ::-webkit-scrollbar-thumb{
       background:url(img/colorbg.jpg);
-      border: 5px solid black;
       border-radius: 10px;
       background-repeat: no-repeat;
       background-size: cover;
