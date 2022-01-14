@@ -16,7 +16,23 @@ html{
   
     
 }
-
+::-webkit-scrollbar{
+    width: 25px;
+  
+}
+::-webkit-scrollbar-track{
+    border: 3px solid black;
+    border-style: dashed;
+}
+::-webkit-scrollbar-thumb{
+  background:url(img/colorbg.jpg);
+  border: 5px solid black;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+ 
+}
 
 body{
     margin: 0;
@@ -32,7 +48,7 @@ nav{
     min-height: 5em;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.329);
     z-index: 100;
-    background-image: url(img/color-bg.jpg);
+    background-image: url(img/color-bg2.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
