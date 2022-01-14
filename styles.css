@@ -16,6 +16,14 @@ html{
   
     
 }
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 body{
     margin: 0;
@@ -78,49 +86,88 @@ nav{
         display: flex;
         align-items: center;
         margin: 10px;
-       
         max-width: 25px;
        
 }
 
+.hamburger.disappear{
+    display: none;
+}
+
+.hamburger.see{
+    display: block;
+    padding: 0;
+    filter: invert(1);
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    max-width: 25px;
+}
 .hamburger:hover{
     background: none;
     filter: invert(1);
     cursor: pointer;
     
 }
+.close-menu{
+    display: none;
+    padding: 0;
+    filter: invert(1);
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 10px;
+    max-width: 25px;
+   
+}
 
-
+.close-menu.see{
+    display: block;
+}
+.close-menu.disappear{
+    display: none;
+}
+.close-menu:hover{
+    background: none;
+}
 .nav-ul{
    
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    cursor: pointer;
     display: none;
-    width: 100%;
-    list-style-type: none;
     
 }
-.nav-ul.show{
-    margin: 0;
+.nav-ul.see{
+    font-family: 'Poppins', sans-serif;
+    
+    cursor: pointer;
     display: flex;
+    width: 100%;
+    list-style-type: none;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-   
-    width: 100%;
-    background-color: rgba(24, 24, 24, 0.472);
-    backdrop-filter: blur(30px);
+    background-color: rgba(10, 10, 10, 0.871);
+    backdrop-filter: blur(10px);
     cursor:pointer;
 }
+
+.nav-ul.disappear{
+    display: none;
+}
+
 li{
     padding: 10px;
 }
 
 a{
     text-decoration: none; 
-    color: rgb(255, 255, 255);
+    color: rgb(202, 202, 202);
     cursor: pointer;
+}
+a:hover{
+    color: rgb(255, 255, 255);
 }
 
 main{
@@ -506,8 +553,9 @@ footer{
         color: white;
         display: flex;
         justify-content: flex-end;
-        max-width: 10%;
-        
+        flex-direction: row;
+        max-width: 0%;
+        background: none;
     } 
    li a:hover{
         border-bottom: 5px solid white;
@@ -518,7 +566,9 @@ footer{
         display: none;
     }
 
-
+    .close-menu.see{
+        display: none;
+    }
     section .hero{
         position: absolute;
         

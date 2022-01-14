@@ -20,8 +20,12 @@
                <div class="nav-menu">
                 <button class="hamburger" id="hamburger">
                     <img src="img/ bars-solid.svg" alt="bars-solid">
+                  
                    </button>
-    
+
+                   <button class="close-menu" id="close-menu"> 
+                    <img src="img/close-solid.svg" alt="close-solid">
+                   </button>
                </div>
                
             <ul class="nav-ul" id="nav-ul">
@@ -219,7 +223,10 @@
            
        </div>
 
+
+
   </section>
+
 <section>
     <footer>
         <div class="footer-stuff">
@@ -253,17 +260,36 @@
 </section>
   
     </main>
-    
+
+  
    <script>
 
-       const hamburger = document.getElementById('hamburger');
+        const hamburger = document.getElementById('hamburger');
         const navUL = document.getElementById('nav-ul');
-        const cancel = document.getElementById('cancel');
-
+        const closeMenu = document.getElementById('close-menu');
+        
+    
      
         hamburger.addEventListener('click', () => {
-            navUL.classList.toggle('show');
-        });
+
+            navUL.classList.toggle('see')
+            hamburger.classList.toggle('disappear')
+            closeMenu.classList.toggle('see')
+
+        
+        })
+
+      
+        closeMenu.addEventListener('click', () => {
+
+            navUL.classList.toggle('see')
+            hamburger.classList.toggle('disappear')
+            closeMenu.classList.toggle('see')
+
+        })
+
+
+
     
    </script>
 
