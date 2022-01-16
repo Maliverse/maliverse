@@ -39,6 +39,67 @@ body{
     padding: 0;
     background-size: contain;
     background-color: rgb(255, 255, 255);
+    width: 100vw;
+   
+}
+.darkmode{
+    background: rgb(56, 56, 56);
+    color: white;
+  
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    position:fixed;
+    z-index: 100;
+    margin-top: 90vh;
+    width: 95vw;
+
+  
+}
+
+.switch-on{
+    display: none;
+    color: black;
+    background-color: rgba(194, 194, 194, 0.637);
+    margin: 0;
+    border-radius: 360px;
+    height: 30px;
+     width: 30px;
+    padding: 20px;
+    border: 5px dotted white;
+    font-size: 10px;
+}
+.switch-on.see{
+    display: flex;
+}
+.switch-on:hover{
+    background-color: white;
+    box-shadow: 0 15px 30px rgba(255, 196, 0, 0.883);
+    border: 5px dashed rgb(255, 196, 0);
+    font-size: 30px;
+}
+.switch-off{
+    display: flex;
+    background-color: rgba(194, 194, 194, 0.637);
+    margin: 0;
+    border-radius: 360px;
+    height: 30px;
+    width: 30px;
+     padding: 20px;
+     border: 5px dotted rgb(0, 0, 0);
+     font-size: 10px;
+}
+.switch-off.disappear{
+    display: none;
+}
+.switch-off:hover{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 15px 30px rgba(148, 57, 223, 0.473);
+    border: 5px dashed rgb(148, 57, 223);
+    font-size: 30px;
 }
 nav{
     position: fixed;
@@ -200,8 +261,7 @@ section .hero{
   position: relative;
     padding: 50px;
     padding-bottom: 50px;
-    padding-right: 50px; /* border: 2px solid rgba(174, 0, 255, 0.993);
-    border-style: dashed;*/
+    padding-right: 50px; 
     border-radius: 25px;
     margin: 0;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
@@ -220,15 +280,25 @@ section .hero{
     align-items: center;
     border: 5px solid black;
     border-style: dashed;
+   
 }
 
+.container.dark{
+background-color: rgba(27, 27, 27, 0.924);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+backdrop-filter: blur(30px) ;
+border: 5px solid rgb(255, 255, 255);
+    border-style: dashed;
+   
+  
+}
 
 .frame{
     border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 360px;
     border-style: dashed;
-    background-color: rgba(231, 231, 231, 0.315);
+    background-color: rgba(255, 255, 255, 0.897);
     backdrop-filter: blur(30px) ;
     box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.151);
     
@@ -295,7 +365,7 @@ section .hero{
     padding: 0;
 }
 
-.profile-img{
+.profile-img {
     position: relative;
     min-width: 250px;
     max-width: 250px;
@@ -306,6 +376,20 @@ section .hero{
     top: 50%;
     left: 50%;
     transform: translate(-50%);
+    background-image: url(img/avatartrim3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    
+    height:350px;
+    
+    
+
+
+}
+.profile-img.switch{
+    background-image: url(img/av-no-glasses-hero.jpg);
 }
 .strikethrough{
     background-color: rgb(231, 231, 231);
@@ -324,11 +408,13 @@ h1{
     color: rgba(174, 0, 255, 0.993);
     align-self: flex-start;
  }
+ h1.dark{
+     color: rgb(255, 255, 255);
+ }
  .my-name-hero{
     text-align: left;
     padding-top: 0;
     font-family: 'Poppins', sans-serif;
-    
     color: rgb(0, 0, 0);
     align-self: flex-start; 
 }
@@ -341,6 +427,9 @@ h1{
      align-self: flex-start;
      margin-bottom: 20px;
  }
+ h2.dark{
+     color: rgb(206, 206, 206);
+ }
  .h2project{
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
@@ -350,6 +439,9 @@ h1{
     color: rgb(0, 0, 0);
     padding-top: 10px;
     padding-bottom:10px ;
+}
+.h2project.light{
+    color: white;
 }
  h3{
     text-align: left;
@@ -370,6 +462,9 @@ p{
 }
 .js-tag{
     font-size: 10px;
+}
+.js-tag.light{
+    color: white;
 }
 span{
     color: rgb(71, 202, 71);
@@ -395,22 +490,20 @@ button:hover{
      box-shadow: 0 15px 30px rgba(191, 0, 197, 0.322);
      transition-duration: 0.5s;
 }
-.tech-stack{
-    padding: 20px 20px;
-    background: rgba(8, 8, 8, 0.993);
-    
-    
-}
-.tech-stack-p{
-    color: white;
-    text-align: center;
-    font-size: 20px;
-}
 .About-Me{
-    color: white;
+    padding: 30px 30px;
+    background-color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 20px;
+   
     
+}
+
+.About-Me.switch{
+   
+    color: rgb(0, 0, 0);
+    background-color:rgb(231, 231, 231);
 }
 
 .My-Projects{
@@ -431,7 +524,11 @@ button:hover{
     
 
 }
-
+.My-Projects.dark{
+    background: rgba(2, 2, 2, 0.637) url(img/mvstrokes.png);
+    background-size: contain;
+    backdrop-filter: blur(30px) ;
+}
 
 .personal-details{
     display: flex;
@@ -455,6 +552,7 @@ footer{
     background-color: rgb(64, 17, 139);
     padding-top: 10%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .contact{
@@ -486,6 +584,7 @@ footer{
     flex-direction: row-reverse;
     padding-right: 5px;
     padding-bottom: 3px;
+    
 
 }
 .hero-icons img{
@@ -493,6 +592,16 @@ footer{
 }
 .hero-icons img:hover{
     filter:invert(100%);
+    transition-duration: 0.5s;
+    
+    
+}
+.hero-icons.bright img{
+  
+    transition-duration: 0.5s;
+}
+.hero-icons.bright img:hover{
+    filter:sepia(100%);
     transition-duration: 0.5s;
 }
 .tagline{
@@ -552,7 +661,7 @@ footer{
        
     }
     ::-webkit-scrollbar{
-        width: 20px;
+        width: 15px;
       
     }
     ::-webkit-scrollbar-track{
@@ -619,8 +728,8 @@ footer{
     backdrop-filter: blur(30px) ;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
     background: url(img/mvstrokes.png) repeat; 
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-repeat:no-repeat;
     background-color: rgba(255, 255, 255, 0.919);
     left: 50%;
     right: 50%;
@@ -636,7 +745,7 @@ footer{
     border-radius: 360px;
     border-style: dashed;
     backdrop-filter: blur(20px);
-    background-color: rgba(243, 243, 243, 0.356);
+    background-color: rgba(255, 255, 255, 0.897);
     padding: auto;
     min-width:450px;
     
@@ -685,13 +794,13 @@ footer{
         border: 5px solid rgba(174, 0, 255, 0.993);
         border-style: dashed; 
         padding: 0px;
-
+        height: 500px;
         
     }
 
     .strikethrough{
-        background-color: rgb(70, 70, 70);
-        border: 2px solid rgb(70, 70, 70);
+        background-color: rgb(160, 160, 160);
+        border: 2px solid rgb(160, 160, 160);
         margin-top: 0px;
         border-radius: 2px; 
         height: 40vh;  
@@ -711,6 +820,9 @@ footer{
         align-self: flex-start;
         font-size: 75px;
      }
+     h1.dark{
+        color: rgb(255, 255, 255);
+    }
      h2{
          text-align: left;
          padding-top: 5px;
@@ -755,11 +867,6 @@ footer{
         font-size: 20px;
     }
    
-    .portfolio{
-        padding: 25px;
-        margin: 0;
-       
-    }
     .My-Projects{
         position: relative;
         padding: 50px;
@@ -788,6 +895,13 @@ footer{
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
         max-width: 1350px;
     }
+    .My-Projects.dark:hover{
+        background: rgba(2, 2, 2, 0.637) url(img/mvstrokes.png);
+        background-size: cover;
+        backdrop-filter: blur(30px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+       
+    }
     .project-img-frame {
         
         padding: 150px;
@@ -814,6 +928,13 @@ footer{
     .project-text{
         max-width: 50%;
     }
+    .footer-section{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        max-width: 100%;
+    }
     footer{
         color: white;
         position: relative;
@@ -822,6 +943,9 @@ footer{
         margin-top: 10px;
         margin-left: 0;
         padding-top: 150px;
+width: 100vw;
+       
+      
     }
 
 .frame2{
@@ -850,12 +974,17 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgb(243, 243, 243);
+    background: rgba(243, 243, 243, 0.904);
     backdrop-filter: blur(30px) ;
     border: 3px solid rgb(0, 0, 0);
     border-style: dashed;
     padding: 0;
 
+}
+.personal-details.black{
+background: rgba(29, 29, 29, 0.863);
+border-top: 3px dashed white;
+border-bottom: 3px dashed white;
 }
 .random-circles{
     background-color: rgb(148, 57, 223);

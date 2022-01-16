@@ -11,11 +11,24 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+        <!---Light --->
+        <div class="button-container">
+            <div >
+                <button class="switch-on" id="switch-on">🌝</button>
+            </div>
+            <div>
+                <button class="switch-off" id="switch-off">🌚</button>
+            </div>
+        </div>
+         <!--- Switch---> 
 <body>
-   
+    <section class="darkmode">
+    </section>
+
         <nav>
           <a href="#Home"><img id="Maliverse" class="navlogo" src="img/mvlogotext.svg" alt="maliverse-logo"></a>  
-           
+          
+ 
             
                <div class="nav-menu">
                 <button class="hamburger" id="hamburger">
@@ -27,31 +40,37 @@
                     <img src="img/close-solid.svg" alt="close-solid">
                    </button>
                </div>
-               
+  
+
+  </section>
+     
             <ul class="nav-ul" id="nav-ul">
                 <li> <a href="#Home">Home</a></li>
-                <li> <a href="#About-Me"> About</a></li>
-                <li><a href="#My-Projects">Projects</a></li>  
+                <li> <a href="#About"> About</a></li>
+                <li><a href="#Portfolio">Projects</a></li>  
             </ul>
         </nav>
+
         <section class="nav2">
            
         </section>
-     
+
    <div>
     <div >
         <img class="mv-logo-colored" src="img/mv-logo-colored-small.png" alt="Maliverse Colored Logo">
     </div>
    </div>
+  
     <main>
         
-           <section class="hero">
+           
+           <section id="heroSection" class="hero">
             <div id="Home" class="container">
 
                 <div class="frame"> 
                     <div class="bulbs"><div class="status-circle"></div>
-                            <img src="img/avatartrim3.jpg"
-                            class="profile-img" alt="profile-img"> 
+                            <div id="profile-img"
+                            class="profile-img" alt="profile-img"></div> 
 
                             <div class="status-circle2"><div class="bubble"></div></div>
                     </div>
@@ -64,10 +83,10 @@
                                
                     <div class="my-name">
 
-                                   <h1 class="my-name-hero" >Akwunté Amali </h1>
+                                   <h1 id="my-name-hero" class="my-name-hero" >Akwunté Amali </h1>
                                    <h2>Frontend Developer & <br>
                                     UI / UX Designer🤘🏻 </h2>
-                                    <p class="js-tag"> var <span>creativeCoder </span>= 'Akwunté Amali'; </p> <br>
+                                    <p id="js-tag" class="js-tag"> var <span>creativeCoder </span>= 'Akwunté Amali'; </p> <br>
                                     <div class="hero-icons">
                                         <div>
                                          <a href="https://twitter.com/Whatismalidoing" target="_blank"><img src="img/social-icons/ico-twitter-pink.svg" alt="ico-twitter-pink"> </a>   
@@ -90,15 +109,16 @@
                                </button> 
                                </a>
                             
-                             
-                             
+                    
                                <!--onclick="location.href='#'"--->        
                      </div>
            </section> 
 
-           <section id="About-Me" class="tech-stack">
+           
+
+           <section id="About" >
                <div>
-                  <p id="tech-stack-p" class="tech-stack-p">
+                  <p id="About-Me" class="About-Me">
                       Design - Build - Launch
                   </p>
                </div>
@@ -106,7 +126,7 @@
            </section>
           
 
-           <div class="personal-details">
+           <div class="personal-details" id="personal-details">
                <div class="frame2">
                 <div class="svg">
                     <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_tn8v6rdu.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
@@ -129,15 +149,15 @@
              </div>
            </div>
            
-           <section class="tech-stack">
+           <section class="About">
             <div>
-               <p class="About-Me" id="About-Me">
+               <p class="About-Me" >
                    Recent Projects
                </p>
             </div>
            
         </section>
- <section class="portfolio">
+ <section class="portfolio" id="Portfolio">
    
 <!------
     FUN
@@ -225,9 +245,7 @@
 
 
 
-  </section>
-
-<section>
+<section class="footer-section">
     <footer>
         <div class="footer-stuff">
             
@@ -250,12 +268,10 @@
             
             <div class="watermark">
                 <p class="tagline">© 2022 Akwunte <strong>Maliverse</strong>  Amali</p>
-               <!--- <div >
-                    <img class="base-icon" src="/img/mvlogo.svg" alt="base-icon">
-                </div>-->
+             
                 
               </div>
-       
+              
     </footer>
 </section>
   
@@ -288,7 +304,73 @@
 
         })
 
+    const turnOn = document.getElementById('switch-on');
+    const turnOff = document.getElementById('switch-off');
+    const backgroundMode = document.querySelector('body');
+    const heroContainer = document.getElementById('Home');
+    const headings = document.querySelector('h1');
+    const headingsToo = document.querySelector('h2');
+    const taglineStuff = document.getElementById('js-tag');
+    const aboutMeWall = document.getElementById('personal-details');
+    
 
+    const projectContainer = document.getElementsByClassName('My-Projects');
+    const projectTexts = document.getElementsByClassName('h2project');
+    const socialIcons = document.getElementsByClassName('hero-icons');
+
+    const heroImage = document.getElementById('profile-img')
+    const aboutMeBar = document.getElementById('About-Me');
+
+    turnOff.addEventListener ('click', () => {
+        turnOff.classList.toggle('disappear')
+        turnOn.classList.toggle('see')
+        backgroundMode.classList.toggle('darkmode')
+        heroContainer.classList.toggle('dark')
+        headings.classList.toggle('dark')
+        headingsToo.classList.toggle('dark')
+        taglineStuff.classList.toggle('light')
+        aboutMeWall.classList.toggle('black')
+        heroImage.classList.toggle('switch')
+        aboutMeBar.classList.toggle('switch')
+
+        for (var i = 0; i < projectContainer.length; i++){
+             projectContainer[i].classList.toggle('dark');
+    }
+
+        for (var i = 0; i < projectTexts.length; i++){
+            projectTexts[i].classList.toggle('light');
+       }
+       for (var i = 0; i < socialIcons.length; i++){
+            socialIcons[i].classList.toggle('bright');
+        }
+       
+    })
+    turnOn.addEventListener ('click', () => {
+        turnOff.classList.toggle('disappear')
+        turnOn.classList.toggle('see')
+        backgroundMode.classList.toggle('darkmode')
+        heroContainer.classList.toggle('dark')
+        headings.classList.toggle('dark')
+        headingsToo.classList.toggle('dark')
+        taglineStuff.classList.toggle('light')
+        aboutMeWall.classList.toggle('black')
+        heroImage.classList.toggle('switch')
+        aboutMeBar.classList.toggle('switch')
+        
+          for (var i = 0; i < projectContainer.length; i++){
+        projectContainer[i].classList.toggle('dark');
+    }
+
+          for (var i = 0; i < projectTexts.length; i++){
+                    projectTexts[i].classList.toggle('light');
+                }
+
+                for (var i = 0; i < socialIcons.length; i++){
+            socialIcons[i].classList.toggle('bright');
+        }
+        
+    })
+    
 
     
    </script>
