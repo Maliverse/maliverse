@@ -53,9 +53,9 @@ body{
     flex-direction: row;
     align-items: center;
     position:fixed;
-    z-index: 100;
+    z-index: 11;
     margin-top: 10vh;
-    width: 93%;
+    width: 97vw;
 
   
 }
@@ -63,11 +63,11 @@ body{
 .switch-on{
     display: none;
     color: black;
-    background-color: rgba(194, 194, 194, 0.637);
+    background-color: rgb(0, 0, 0);
     margin: 0;
     border-radius: 360px;
     height: 30px;
-     width: 30px;
+    width: 30px;
     padding: 20px;
     border: 5px dotted white;
     font-size: 10px;
@@ -83,7 +83,7 @@ body{
 }
 .switch-off{
     display: flex;
-    background-color: rgba(194, 194, 194, 0.637);
+    background-color: rgb(255, 255, 255);
     margin: 0;
     border-radius: 360px;
     height: 30px;
@@ -108,17 +108,18 @@ nav{
     max-height: 5em;
     min-height: 5em;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.329);
-    z-index: 100;
+    z-index: 10;
     background-image: url(img/color-bg2.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    transition-property: top 0.3s;
     
     
 }
+
 .nav2{
     position: fixed;
     width: 100vw;
@@ -206,11 +207,12 @@ nav{
 .nav-ul{
    
     display: none;
+   
     
 }
 .nav-ul.see{
     font-family: 'Poppins', sans-serif;
-    
+  
     cursor: pointer;
     display: flex;
     width: 100%;
@@ -221,6 +223,7 @@ nav{
     background-color: rgba(10, 10, 10, 0.871);
     backdrop-filter: blur(10px);
     cursor:pointer;
+  
 }
 
 .nav-ul.disappear{
@@ -661,6 +664,9 @@ footer{
         border-radius: 360px; 
       
        
+    }
+    .button-container{
+        margin-top: 90vh;
     }
     ::-webkit-scrollbar{
         width: 15px;
