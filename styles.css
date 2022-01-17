@@ -267,7 +267,7 @@ section .hero{
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
     min-width: 800px;
     max-width: 600px;
-    background: url(img/mvstrokes.png);
+    background: url(img/mvdoodle.png);
     background-size:contain;
     background-repeat: repeat;
     backdrop-filter: blur(30px) ;
@@ -315,6 +315,8 @@ border: 5px solid rgb(255, 255, 255);
     background-color: rgb(148, 57, 223);
     border: 24px solid black;
     border-style: dashed;
+    
+   
    
 }  
 .status-circle{
@@ -392,8 +394,8 @@ border: 5px solid rgb(255, 255, 255);
     background-image: url(img/av-no-glasses-hero.jpg);
 }
 .strikethrough{
-    background-color: rgb(231, 231, 231);
-    border: 2px solid rgb(231, 231, 231);
+    background-color: rgb(151, 151, 151);
+    border: 2px solid rgb(151, 151, 151);
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 2px;
@@ -514,8 +516,8 @@ button:hover{
     border-radius: 25px;
     margin: 20px;
     min-width: 200px;
-    background: rgb(255, 255, 255) url(img/mvstrokes.png);
-    background-size: contain;
+    background: rgb(255, 255, 255) url(img/mvdoodle.png);
+    background-size: cover;
     backdrop-filter: blur(30px) ;
     display: flex;
     flex-direction: row-reverse;
@@ -525,8 +527,8 @@ button:hover{
 
 }
 .My-Projects.dark{
-    background: rgba(2, 2, 2, 0.637) url(img/mvstrokes.png);
-    background-size: contain;
+    background: rgba(2, 2, 2, 0.637) url(img/mvdoodle.png);
+    background-size: cover;
     backdrop-filter: blur(30px) ;
 }
 
@@ -727,7 +729,7 @@ footer{
     margin-top: 0px;
     backdrop-filter: blur(30px) ;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
-    background: url(img/mvstrokes.png) repeat; 
+    background: url(img/mvdoodle.png) repeat; 
     background-size:cover;
     background-repeat:no-repeat;
     background-color: rgba(255, 255, 255, 0.919);
@@ -875,8 +877,8 @@ footer{
         border-radius: 25px;
         margin: 0;
         margin-top: 10px;
-        background: url(img/mvstrokes.png);
-        background-size: contain;
+        background: url(img/mvdoodle.png);
+        background-size: cover;
         backdrop-filter: blur(30px) ;
         display: flex;
         flex-direction: row-reverse;
@@ -890,18 +892,12 @@ footer{
        
     }
     .My-Projects:hover{
-        background:   #fffffe url(img/mvstrokes.png);
+     
         transition-duration: 0.3s;
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
         max-width: 1350px;
     }
-    .My-Projects.dark:hover{
-        background: rgba(2, 2, 2, 0.637) url(img/mvstrokes.png);
-        background-size: cover;
-        backdrop-filter: blur(30px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
-       
-    }
+   
     .project-img-frame {
         
         padding: 150px;
@@ -959,6 +955,10 @@ width: 100vw;
     border-style: dashed;
    max-width: 760px;
    max-height: 900px;
+
+   height: 760px;
+   width: 100%;
+
 }  
 .svg{
    

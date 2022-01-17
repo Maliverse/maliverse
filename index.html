@@ -84,9 +84,9 @@
                     <div class="my-name">
 
                                    <h1 id="my-name-hero" class="my-name-hero" >Akwunté Amali </h1>
-                                   <h2>Frontend Developer & <br>
-                                    UI / UX Designer🤘🏻 </h2>
-                                    <p id="js-tag" class="js-tag"> var <span>creativeCoder </span>= 'Akwunté Amali'; </p> <br>
+                                   <h2>Web Developer & <br>
+                                    UI Designer🤘🏻 </h2>
+                                    <p id="js-tag" class="js-tag"> const <span> akwunteAmali </span>= 'designing the future'; </p> <br>
                                     <div class="hero-icons">
                                         <div>
                                          <a href="https://twitter.com/Whatismalidoing" target="_blank"><img src="img/social-icons/ico-twitter-pink.svg" alt="ico-twitter-pink"> </a>   
@@ -109,8 +109,7 @@
                                </button> 
                                </a>
                             
-                    
-                               <!--onclick="location.href='#'"--->        
+              
                      </div>
            </section> 
 
@@ -118,7 +117,7 @@
 
            <section id="About" >
                <div>
-                  <p id="About-Me" class="About-Me">
+                  <p  class="About-Me">
                       Design - Build - Launch
                   </p>
                </div>
@@ -278,103 +277,8 @@
     </main>
 
   
-   <script>
+  
 
-        const hamburger = document.getElementById('hamburger');
-        const navUL = document.getElementById('nav-ul');
-        const closeMenu = document.getElementById('close-menu');
-        
-    
-     
-        hamburger.addEventListener('click', () => {
-
-            navUL.classList.toggle('see')
-            hamburger.classList.toggle('disappear')
-            closeMenu.classList.toggle('see')
-
-        
-        })
-
-      
-        closeMenu.addEventListener('click', () => {
-
-            navUL.classList.toggle('see')
-            hamburger.classList.toggle('disappear')
-            closeMenu.classList.toggle('see')
-
-        })
-
-    const turnOn = document.getElementById('switch-on');
-    const turnOff = document.getElementById('switch-off');
-    const backgroundMode = document.querySelector('body');
-    const heroContainer = document.getElementById('Home');
-    const headings = document.querySelector('h1');
-    const headingsToo = document.querySelector('h2');
-    const taglineStuff = document.getElementById('js-tag');
-    const aboutMeWall = document.getElementById('personal-details');
-    
-
-    const projectContainer = document.getElementsByClassName('My-Projects');
-    const projectTexts = document.getElementsByClassName('h2project');
-    const socialIcons = document.getElementsByClassName('hero-icons');
-
-    const heroImage = document.getElementById('profile-img')
-    const aboutMeBar = document.getElementById('About-Me');
-
-    turnOff.addEventListener ('click', () => {
-        turnOff.classList.toggle('disappear')
-        turnOn.classList.toggle('see')
-        backgroundMode.classList.toggle('darkmode')
-        heroContainer.classList.toggle('dark')
-        headings.classList.toggle('dark')
-        headingsToo.classList.toggle('dark')
-        taglineStuff.classList.toggle('light')
-        aboutMeWall.classList.toggle('black')
-        heroImage.classList.toggle('switch')
-        aboutMeBar.classList.toggle('switch')
-
-        for (var i = 0; i < projectContainer.length; i++){
-             projectContainer[i].classList.toggle('dark');
-    }
-
-        for (var i = 0; i < projectTexts.length; i++){
-            projectTexts[i].classList.toggle('light');
-       }
-       for (var i = 0; i < socialIcons.length; i++){
-            socialIcons[i].classList.toggle('bright');
-        }
-       
-    })
-    turnOn.addEventListener ('click', () => {
-        turnOff.classList.toggle('disappear')
-        turnOn.classList.toggle('see')
-        backgroundMode.classList.toggle('darkmode')
-        heroContainer.classList.toggle('dark')
-        headings.classList.toggle('dark')
-        headingsToo.classList.toggle('dark')
-        taglineStuff.classList.toggle('light')
-        aboutMeWall.classList.toggle('black')
-        heroImage.classList.toggle('switch')
-        aboutMeBar.classList.toggle('switch')
-        
-          for (var i = 0; i < projectContainer.length; i++){
-        projectContainer[i].classList.toggle('dark');
-    }
-
-          for (var i = 0; i < projectTexts.length; i++){
-                    projectTexts[i].classList.toggle('light');
-                }
-
-                for (var i = 0; i < socialIcons.length; i++){
-            socialIcons[i].classList.toggle('bright');
-        }
-        
-    })
-    
-
-    
-   </script>
-
-
+<script src="script.js"></script>
 </body>
 </html>
