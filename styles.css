@@ -45,8 +45,8 @@ html body{
     align-items: center;
     position:fixed;
     z-index: 11;
-    margin-top: 90vh;
-    width: 97vw;
+    margin-top: 750px;
+    width: 400px;
 
   
 }
@@ -638,7 +638,17 @@ footer{
 
 
 @media(min-width:70rem){
-
+    .button-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position:fixed;
+        z-index: 11;
+        margin-top: 900px;
+        width: 95vw;
+    
+      
+    }
     
     nav{
         position: static;
