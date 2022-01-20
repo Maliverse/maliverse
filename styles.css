@@ -7,16 +7,19 @@
     box-sizing:border-box;
 }
 
-html body{
+html{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+body{
     margin: 0;
     padding: 0;
     background-size: contain;
-   height: 100vh;
-    background-size: contain;
     background-color: rgb(255, 255, 255);
-    width: 100vw;
     transition: 200ms;
-    min-height: 100%;
+   
     
 }
 .darkmode{
@@ -677,7 +680,7 @@ footer{
         align-items: center;
         position:fixed;
         z-index: 11;
-      margin-left: 75vw;
+      margin-left: 90vw;
         transition: 200ms;
        
       
