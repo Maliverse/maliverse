@@ -31,6 +31,9 @@ const headingsToo = document.querySelector('h2');
 const taglineStuff = document.getElementById('js-tag');
 const aboutMeWall = document.getElementById('personal-details');
 const heroImage = document.getElementById('profile-img');
+const footerCta = document.getElementById ('cta');
+const footerTagline = document.getElementById('tagline');
+const footerContainer = document.getElementById('footer')
 
 const projectContainer = document.getElementsByClassName('My-Projects');
 const projectTexts = document.getElementsByClassName('h2project');
@@ -47,6 +50,11 @@ headingsToo.classList.toggle('dark')
 taglineStuff.classList.toggle('light')
 aboutMeWall.classList.toggle('black')
 heroImage.classList.toggle('switch')
+footerCta.classList.toggle('light')
+footerTagline.classList.toggle('light')
+footerContainer.classList.toggle('dark')
+
+
 
 
 for (var i = 0; i < projectContainer.length; i++){
@@ -73,6 +81,9 @@ headingsToo.classList.toggle('dark')
 taglineStuff.classList.toggle('light')
 aboutMeWall.classList.toggle('black')
 heroImage.classList.toggle('switch')
+footerCta.classList.toggle('light')
+footerTagline.classList.toggle('light')
+footerContainer.classList.toggle('dark')
 
 
   for (var i = 0; i < projectContainer.length; i++){

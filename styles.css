@@ -10,7 +10,7 @@
 html{
     margin: 0;
     padding: 0;
-   overflow-x: hidden;
+  
  
 }
 body{
@@ -21,8 +21,10 @@ body{
     transition: 200ms;
     height: 50vh;
     
-    
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
 .darkmode{
     background: rgb(56, 56, 56);
    
@@ -30,6 +32,8 @@ body{
 
   
 }
+
+
 /*
 ::-webkit-scrollbar{
     width: 7px;
@@ -593,9 +597,9 @@ button:hover{
 }
 footer{
     position: relative;
-    color: white;
+    color: black;
     min-width: 100%;
-    background-color: rgb(64, 17, 139);
+    background-color: white;
   
     margin: 0;
     
@@ -605,16 +609,23 @@ footer{
     flex-direction: column;
     justify-content: center;
     bottom: 0;
-    
+    border-top: 2px solid black;
    
 }
+footer.dark{
+    background: rgb(56, 56, 56);
+    border-top: 2px solid white;
+}
 
-.contact{
+.cta{
     position: relative;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold ;
    text-align: center;
+}
+.cta.light{
+    color: white
 }
 
 .social-icons{
@@ -661,12 +672,14 @@ footer{
 .tagline{
     padding: 2%;
     font-size: 15px;
-    color: white;
+    color: black;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
   }
-
+  .tagline.light{
+      color: white;
+  }
 
 /*media queries for web view--
 -----------------------------------------------------
@@ -1065,7 +1078,14 @@ border-bottom: 3px dashed white;
  
 }
 
-
+.tagline{
+    padding: 2%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+  }
 }
     /*-------------------------------------
 End of Media Query
