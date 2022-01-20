@@ -338,7 +338,7 @@ border: 5px solid rgb(255, 255, 255);
     background-color: rgb(148, 57, 223);
     border: 24px solid black;
     border-style: dashed;
-    
+    margin: 50px;
    
    
 }  
@@ -663,7 +663,7 @@ footer{
 -----------------------------------------------------*/
 
 
-@media(min-width:70rem){
+@media(min-width:80rem){
     .button-container{
         display: flex;
         justify-content: flex-end;
@@ -985,10 +985,12 @@ footer{
     border: 24px solid black;
     border-style: dashed;
    max-width: 760px;
+   min-width: 300px;
    max-height: 900px;
 
    height: 760px;
    width: 100%;
+  margin: 0;
 
 }  
 .svg{
