@@ -25,8 +25,9 @@ body{
 }
 .darkmode{
     background: rgb(56, 56, 56);
-    color: white;
+   
     transition: 200ms;
+
   
 }
 /*
@@ -150,9 +151,9 @@ nav{
   
 }
 .mv-logo-colored{
-    position: fixed;
-  max-height: 200px;
-  max-width: 200px;
+    
+  height: 200px;
+  width: 200px;
   
 }
 .navlogo{
@@ -337,7 +338,7 @@ border: 5px solid rgb(255, 255, 255);
   
 }
 .frame2{
-    position: relative;
+    
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
     border-top-left-radius: 100% ;
@@ -345,7 +346,7 @@ border: 5px solid rgb(255, 255, 255);
     background-color: rgb(148, 57, 223);
     border: 24px solid black;
     border-style: dashed;
-    margin: 50px;
+    margin: 20px;
    
    
 }  
@@ -729,9 +730,11 @@ footer{
      
     }*/
     .mv-logo-colored{
-        min-height: 1700px;
-        min-width: 1700px;
-    }
+        height: 500px;
+        width: 500px;
+    
+      
+    } 
     
     .nav-ul{
       
