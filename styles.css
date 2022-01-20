@@ -15,13 +15,15 @@ html body{
     background-size: contain;
     background-color: rgb(255, 255, 255);
     width: 100vw;
-    
+    transition: 200ms;
 }
 .darkmode{
     background: rgb(56, 56, 56);
     color: white;
+    transition: 200ms;
   
 }
+/*
 ::-webkit-scrollbar{
     width: 7px;
   background: white;
@@ -37,7 +39,7 @@ html body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+*/
 
 .button-container{
     display: flex;
@@ -45,9 +47,9 @@ html body{
     align-items: center;
     position:fixed;
     z-index: 11;
-    margin-top: 70vh;
+    margin-top: 90vh;
     width: 95vw;
-
+    transition: 200ms;
   
 }
 .button-container-outline{
@@ -70,6 +72,7 @@ html body{
     padding: 17px;
     border:8px solid rgb(255, 196, 0);
     font-size: 10px;
+    transition: 200ms;
 }
 .switch-on.see{
     display: flex;
@@ -90,6 +93,7 @@ html body{
      padding: 17px;
      border: 8px solid rgb(0, 0, 0);
      font-size: 10px;
+     transition: 200ms;
 }
 .switch-off.disappear{
     display: none;
@@ -104,17 +108,18 @@ nav{
     position: fixed;
     width: 100%;
     background-color: rgb(64, 17, 139);
-    max-height: 5em;
-    min-height: 5em;
+    max-height: 3em;
+    min-height: 3em;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.329);
     z-index: 10;
     background-image: url(img/color-bg2.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    transition-property: top 0.3s;
+   
     
     
 }
@@ -123,9 +128,9 @@ nav{
     position: fixed;
     width: 100vw;
     background-color: rgba(32, 32, 32, 0.993);
-    max-height: 5em;
-    min-height: 5em;
-    margin-top: 30px;
+    max-height: 3em;
+    min-height: 3em;
+    margin-top: 25px;
     border-radius: 360px; 
    
 }
@@ -147,8 +152,9 @@ nav{
 .navlogo{
  
     max-width: 200px;
-    min-width: 200px;
-   
+    height: 40px;
+    padding: 0;
+
 }
 .nav-menu{
     display: block;
@@ -226,11 +232,13 @@ nav{
     list-style-type: none;
     justify-content: space-around;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     background-color: rgba(10, 10, 10, 0.871);
     backdrop-filter: blur(10px);
     cursor:pointer;
-  
+  margin-top: -2px;
+  border-bottom-left-radius: 320px; 
+  border-bottom-right-radius: 320px; 
 }
 
 .nav-ul.disappear{
@@ -280,26 +288,26 @@ section .hero{
     background: url(img/mvdoodle.png);
     background-size:contain;
     background-repeat: repeat;
-    backdrop-filter: blur(30px) ;
+    
   left: 50%;
   right: 50%;
   transform: translate(-50%);
-    background-color: rgba(255, 255, 255, 0.987);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 5px solid black;
     border-style: dashed;
-   
+    transition: 200ms;
 }
 
 .container.dark{
-background-color: rgba(27, 27, 27, 0.924);
+background-color: rgb(27, 27, 27);
 box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
-backdrop-filter: blur(30px) ;
+
 border: 5px solid rgb(255, 255, 255);
     border-style: dashed;
-   
+    transition: 200ms;
   
 }
 
@@ -321,7 +329,7 @@ border: 5px solid rgb(255, 255, 255);
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
     border-top-left-radius: 100% ;
-    backdrop-filter: blur(20px);
+ 
     background-color: rgb(148, 57, 223);
     border: 24px solid black;
     border-style: dashed;
@@ -395,13 +403,14 @@ border: 5px solid rgb(255, 255, 255);
     justify-content: center;
     
     height:350px;
-    
+    transition: 200ms;
     
 
 
 }
 .profile-img.switch{
     background-image: url(img/av-no-glasses-hero.jpg);
+    transition: 200ms;
 }
 .strikethrough{
     background-color: rgb(151, 151, 151);
@@ -419,9 +428,11 @@ h1{
     
     color: rgba(174, 0, 255, 0.993);
     align-self: flex-start;
+    transition: 200ms;
  }
  h1.dark{
      color: rgb(255, 255, 255);
+     transition: 200ms;
  }
  .my-name-hero{
     text-align: left;
@@ -429,6 +440,7 @@ h1{
     font-family: 'Poppins', sans-serif;
     color: rgb(0, 0, 0);
     align-self: flex-start; 
+    transition: 200ms;
 }
  h2{
      text-align: left;
@@ -438,9 +450,11 @@ h1{
      color: rgb(119, 119, 119);
      align-self: flex-start;
      margin-bottom: 20px;
+     transition: 200ms;
  }
  h2.dark{
      color: rgb(206, 206, 206);
+     transition: 200ms;
  }
  .h2project{
     font-family: 'Courier New', Courier, monospace;
@@ -451,9 +465,11 @@ h1{
     color: rgb(0, 0, 0);
     padding-top: 10px;
     padding-bottom:10px ;
+    transition: 200ms;
 }
 .h2project.light{
     color: white;
+    transition: 200ms;
 }
  h3{
     text-align: left;
@@ -474,9 +490,11 @@ p{
 }
 .js-tag{
     font-size: 10px;
+    transition: 200ms;
 }
 .js-tag.light{
     color: white;
+    transition: 200ms;
 }
 span{
     color: rgb(71, 202, 71);
@@ -508,7 +526,7 @@ button:hover{
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 20px;
-   
+    transition: 200ms;
     
 }
 
@@ -516,6 +534,7 @@ button:hover{
    
     color: rgb(0, 0, 0);
     background-color:rgb(231, 231, 231);
+    transition: 200ms;
 }
 
 .My-Projects{
@@ -528,18 +547,19 @@ button:hover{
     min-width: 200px;
     background: rgb(255, 255, 255) url(img/mvdoodle.png);
     background-size: cover;
-    backdrop-filter: blur(30px) ;
+   
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
-    
+    transition: 200ms;
 
 }
 .My-Projects.dark{
-    background: rgba(2, 2, 2, 0.637) url(img/mvdoodle.png);
+    background: rgb(27, 27, 27) url(img/mvdoodle.png);
     background-size: cover;
-    backdrop-filter: blur(30px) ;
+    transition: 200ms;
+   
 }
 
 .personal-details{
@@ -548,10 +568,11 @@ button:hover{
     justify-content: center;
     align-items: center;
     background: rgb(248, 193, 11);
-    backdrop-filter: blur(0px) ;
+   
     border: 3px solid rgb(0, 0, 0);
     border-style: dashed;
     padding: 0;
+    transition: 200ms;
 
 }
 .about-paragraph{
@@ -644,7 +665,7 @@ footer{
         align-items: center;
         position:fixed;
         z-index: 11;
-        margin-top: 900px;
+        margin-top: 90vh;
         width: 95vw;
     
       
@@ -653,8 +674,8 @@ footer{
     nav{
         position: static;
         background-color: rgb(64, 17, 139);
-        max-height: 6em;
-        min-height: 6em;
+        max-height: 4em;
+        min-height: 4em;
         position: fixed;
         z-index: 100;
         display: flex;
@@ -667,15 +688,15 @@ footer{
         position: fixed;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.993);
-        max-height: 7em;
-        min-height: 7em;
-        margin-top: 40px;
+        max-height: 4em;
+        min-height: 4em;
+        margin-top: 30px;
         border-radius: 360px; 
       
        
     }
   
-    ::-webkit-scrollbar{
+    /*::-webkit-scrollbar{
         width: 15px;
       
     }
@@ -690,7 +711,7 @@ footer{
       background-size: cover;
       
      
-    }
+    }*/
     .mv-logo-colored{
         min-height: 1700px;
         min-width: 1700px;
@@ -727,7 +748,7 @@ footer{
   
     .container{
     position: relative;
-    padding: 100px;
+    padding: 80px;
     padding-left: 200px;
     padding-right: 200px;
     border-bottom-left-radius: 100%;
@@ -739,12 +760,12 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin-top: 0px;
-    backdrop-filter: blur(30px) ;
+  
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
     background: url(img/mvdoodle.png) repeat; 
     background-size:cover;
     background-repeat:no-repeat;
-    background-color: rgba(255, 255, 255, 0.919);
+    background-color: rgb(255, 255, 255);
     left: 50%;
     right: 50%;
     transform: translate(-50%);
@@ -891,7 +912,7 @@ footer{
         margin-top: 10px;
         background: url(img/mvdoodle.png);
         background-size: cover;
-        backdrop-filter: blur(30px) ;
+        
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -954,7 +975,7 @@ footer{
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
     border-top-left-radius: 100% ;
-    backdrop-filter: blur(20px);
+   
     background-color: rgb(148, 57, 223);
     border: 24px solid black;
     border-style: dashed;
@@ -979,15 +1000,15 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgba(243, 243, 243, 0.904);
-    backdrop-filter: blur(30px) ;
+    background: rgb(243, 243, 243);
+    
     border: 3px solid rgb(0, 0, 0);
     border-style: dashed;
     padding: 0;
 
 }
 .personal-details.black{
-background: rgba(29, 29, 29, 0.863);
+background: rgb(29, 29, 29);
 border-top: 3px dashed white;
 border-bottom: 3px dashed white;
 }
@@ -1018,7 +1039,7 @@ border-bottom: 3px dashed white;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px ;
     border-style: dashed;
-    backdrop-filter: blur(20px);
+   
  position: relative;
     
  
