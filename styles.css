@@ -173,6 +173,9 @@ nav{
         max-width: 25px;
        
 }
+.hamburger img{
+    transition: 300ms;
+}
 
 .hamburger.disappear{
     display: none;
@@ -189,6 +192,7 @@ nav{
     align-items: center;
     margin: 10px;
     max-width: 25px;
+   
 }
 .hamburger:hover{
     background: none;
@@ -210,6 +214,7 @@ nav{
 
 .close-menu.see{
     display: block;
+   
 }
 .close-menu.disappear{
     display: none;
