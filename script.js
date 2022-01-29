@@ -1,4 +1,37 @@
+// Intersection observers //
 
+const myProjects = document.querySelectorAll('.projects');
+const heroContent = document.querySelectorAll('.heroText');
+const heroFrame = document.querySelectorAll('.frame');
+
+
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+    entry.target.classList.toggle('slide', entry.isIntersecting)
+   // if(entry.isIntersecting) observer.unobserve(entry.target)
+    })
+},
+    {
+        threshold: 0.5
+    }
+)
+
+heroFrame.forEach(frame => {
+    observer.observe(frame)
+    })  
+
+heroContent.forEach(heroText => {
+    observer.observe(heroText)
+    })  
+
+myProjects.forEach(projects => {
+observer.observe(projects)
+})
+    
+   
+    
+// Intersection observers //
 
 const hamburger = document.getElementById('hamburger');
 const navUL = document.getElementById('nav-ul');
@@ -35,7 +68,7 @@ const footerCta = document.getElementById ('cta');
 const footerTagline = document.getElementById('tagline');
 const footerContainer = document.getElementById('footer')
 
-const projectContainer = document.getElementsByClassName('My-Projects');
+const projectContainer = document.getElementsByClassName('projects');
 const projectTexts = document.getElementsByClassName('h2project');
 const socialIcons = document.getElementsByClassName('hero-icons');
 const aboutMeBar = document.getElementsByClassName('About-Me');
