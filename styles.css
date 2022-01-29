@@ -578,7 +578,7 @@ button:hover{
     align-items: center;
     justify-content: flex-end;
     transition:  1s;
-    transform: translate(100px);
+    transform: translateX(100px);
     opacity: 0;
 }
 .projects.slide{
