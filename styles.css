@@ -415,7 +415,7 @@ border: 5px solid rgb(255, 255, 255);
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-    background-image: url(img/avatarUpdateNoStrokes.png);
+    background-image: url(img/avatarUpdateNoStrokes@0.5x.png);
     background-size:contain;
     background-repeat: no-repeat;
     display: flex;
@@ -427,7 +427,7 @@ border: 5px solid rgb(255, 255, 255);
 
 }
 .profile-img.switch{
-    background-image: url(img/avatarUpdateNoGlasses.png);
+    background-image: url(img/avatarUpdateNoGlasses@0.5x.png);
      transition: 1s;
 }
 .strikethrough{
@@ -1054,7 +1054,7 @@ footer.dark{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgb(243, 243, 243) url(img/mvdoodle.png);
+    background: rgb(243, 243, 243) ;
     background-size: cover;
     border: 3px solid rgb(0, 0, 0);
     border-style: dashed;
