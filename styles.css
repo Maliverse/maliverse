@@ -328,7 +328,7 @@ border: 5px solid rgb(255, 255, 255);
 
 .frame{
     border: 2px solid rgb(0, 0, 0);
-    padding: 10px;
+    
     border-radius: 360px;
     border-style: dashed;
     background-color: rgb(255, 255, 255);
@@ -338,6 +338,7 @@ border: 5px solid rgb(255, 255, 255);
     transition: 1s;
     transform: translateX(100px);
     opacity: 0;
+    
   
 }
 .frame.slide{
@@ -367,7 +368,7 @@ border: 5px solid rgb(255, 255, 255);
     border-style: dashed;
     background-color: lightgreen;
     background-size: 50px;
-    margin-left: 30px;
+    margin-left: 40px;
     
 }
 .status-circle:hover{
@@ -384,7 +385,7 @@ border: 5px solid rgb(255, 255, 255);
     border-radius: 360px;
     border-style: dashed;
     background-color: lightgreen;
-    margin-left: 230px;
+    margin-left: 185px;
     border-bottom-left-radius: 3px;
   
     
@@ -408,7 +409,7 @@ border: 5px solid rgb(255, 255, 255);
 
 .profile-img {
     position: relative;
-    width: 350px;
+    width: 300px;
     
     border-radius: 100%;
     top: 50%;
@@ -419,7 +420,7 @@ border: 5px solid rgb(255, 255, 255);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    height:350px;
+    height: 300px;
      transition: 1s;
     
 
@@ -818,18 +819,18 @@ footer.dark{
     }
  
 
-    /*.frame{
+    .frame{
     position: relative;
     border: 2px solid black;
     border-radius: 360px;
     border-style: dashed;
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.897);
-    padding: 20px;
-    width:750px;
-    height: 500px;
-    
-    }*/
+   
+    width:850px;
+  
+   
+    }
     .status-circle{
         color: #000;
         border: 2px solid black;
@@ -839,7 +840,7 @@ footer.dark{
         border-style: dashed;
         background-color: lightgreen;
         background-size: 50px;
-        margin-left: 20px;
+        margin-left: 50px;
     }
     .status-circle:hover{
         border-color:  rgb(0, 128, 53);
@@ -855,7 +856,7 @@ footer.dark{
         border-radius: 360px;
         border-style: dashed;
         background-color: lightgreen;
-        margin-left: 250px;
+        margin-left: 210px;
         border-bottom-left-radius: 3px;     
         
     }
