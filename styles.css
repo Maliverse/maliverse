@@ -991,19 +991,24 @@ footer.dark{
         height: 200px;
         width: 200px;
         margin: 10px;
-        border: 5px solid rgba(174, 0, 255, 0.993);
-        border-style: dotted;
+      border: 5px solid rgba(124, 124, 124, 0.993); 
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
     }
     .echohealth{
-        background-image: url(img/portfolio-thumbs/echohealth.png);
+        background-image: url(img/echothumb@0.3x.jpg);
         background-repeat: no-repeat;
         background-size: contain;
     }
-    .blank-project{
-        background-image: url(img/mvlogo.png);
+    .project-two{
+        background-image: url(img/NEXUS\ THUMBNAIL@0.3x.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .project-three{
+        background-image: url(img/calculator.jpg);
         background-repeat: no-repeat;
         background-size: contain;
     }
