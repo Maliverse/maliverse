@@ -299,8 +299,8 @@ section .hero{
     border-radius: 25px;
     margin: 0;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198); 
-    background: url(img/mvdoodle.png);
-    background-size:contain;
+    background: url(img/mvdoodle2.png);
+    background-size:cover;
     background-repeat: repeat;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -572,7 +572,7 @@ button:hover{
     border-radius: 25px;
     margin: 20px;
     min-width: 200px;
-    background: rgb(255, 255, 255) url(img/mvdoodle.png);
+    background: rgb(255, 255, 255) url(img/mvdoodle2.png);
     background-size: cover;
     display: flex;
     flex-direction: row-reverse;
@@ -587,7 +587,7 @@ button:hover{
  opacity: 1;
 }
 .projects.dark{
-    background: rgb(27, 27, 27) url(img/mvdoodle.png);
+    background: rgb(27, 27, 27) url(img/mvdoodle2.png);
     background-size: cover;
      transition: 1s;
    
@@ -807,7 +807,7 @@ footer.dark{
     
   
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
-    background: url(img/mvdoodle.png) repeat; 
+    background: url(img/mvdoodle2.png) repeat; 
     background-size:cover;
     background-repeat:no-repeat;
     background-color: rgb(255, 255, 255);
@@ -965,7 +965,7 @@ footer.dark{
         border-radius: 25px;
         margin: 0;
         margin-top: 10px;
-        background: url(img/mvdoodle.png);
+        background: url(img/mvdoodle2.png);
         background-size: cover;
         
         display: flex;
