@@ -158,7 +158,7 @@ nav{
     
   height: 200px;
   width: 200px;
-  
+  display: none;
 }
 .navlogo{
  
@@ -310,19 +310,20 @@ section .hero{
      transition: 1s;
     
 }
+.container.dark{
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+    
+    border: 5px solid rgb(255, 255, 255);
+        border-style: dashed;
+         transition: 1s;
+      
+    }
 .container.slide{
     transform: translateX(0);
     opacity: 1;
 }
-.container.dark{
-background-color: rgb(27, 27, 27);
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
 
-border: 20px solid rgb(255, 255, 255);
-    border-style: dashed;
-     transition: 1s;
-  
-}
 
 .frame{
     border: 2px solid rgb(0, 0, 0);
@@ -818,7 +819,16 @@ footer.dark{
    
     }
  
-
+    .container.dark{
+        background-color: rgb(27, 27, 27);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+        
+        border: 20px solid rgb(255, 255, 255);
+            border-style: dashed;
+             transition: 1s;
+          
+        }
+        
     .frame{
     position: relative;
     border: 2px solid black;
