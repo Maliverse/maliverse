@@ -318,7 +318,7 @@ section .hero{
 background-color: rgb(27, 27, 27);
 box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
 
-border: 5px solid rgb(255, 255, 255);
+border: 20px solid rgb(255, 255, 255);
     border-style: dashed;
      transition: 1s;
   
