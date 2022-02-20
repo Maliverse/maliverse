@@ -118,12 +118,12 @@ body{
 nav{
     position: fixed;
     width: 100%;
-    background-color: rgb(64, 17, 139);
+    background-color: rgb(0, 0, 0);
     max-height: 3em;
     min-height: 3em;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.329);
     z-index: 10;
-    background-image: url(img/color-bg2.jpg);
+  /*  background-image: url(img/color-bg2.jpg);*/
     background-size: cover;
     display: flex;
     align-items: center;
@@ -298,7 +298,6 @@ section .hero{
     padding-bottom: 50px;
     border-radius: 25px;
     margin: 0;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198); 
     background: url(img/mvdoodle2.png);
     background-size:cover;
     background-repeat: repeat;
@@ -307,8 +306,7 @@ section .hero{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid black;
-    border-style: dashed;
+    border: 5px dashed black;
      transition: 1s;
     
 }
@@ -361,12 +359,12 @@ border: 5px solid rgb(255, 255, 255);
 }  
 .status-circle{
     
-    border: 2px solid black;
+    border: 3px solid rgb(0, 0, 0);
     height: 50px;
     width: 50px;
     border-radius: 360px;
     border-style: dashed;
-    background-color: lightgreen;
+    background-color:  rgb(58, 58, 58);;
     background-size: 50px;
     margin-left: 40px;
     
@@ -378,14 +376,13 @@ border: 5px solid rgb(255, 255, 255);
     box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
 }
 .status-circle2{
-    color: #000;
-    border: 2px solid black;
+   
+    border: 3px dashed rgb(0, 0, 0);
     height: 50px;
     width: 50px;
     border-radius: 360px;
-    border-style: dashed;
-    background-color: lightgreen;
-    margin-left: 185px;
+    background-color: rgb(58, 58, 58);
+    margin-left: 180px;
     border-bottom-left-radius: 3px;
   
     
@@ -398,15 +395,15 @@ border: 5px solid rgb(255, 255, 255);
     box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
 }
 
-.bubble{
-    background-color: rgb(224, 255, 224);
+/*.bubble{
+    background-color: rgb(241, 241, 241);
     height: 20px;
     width: 20px;
     border-radius: 360px;
     margin-left: 10px;
     padding: 0;
 }
-
+*/
 .profile-img {
     position: relative;
     width: 300px;
@@ -532,7 +529,7 @@ button{
     padding-bottom: 15px;
     border: 2px solid rgba(0, 0, 0, 0.993);
     border-style: dashed;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
     color: rgba(231, 231, 231, 0.993);
     background: rgba(174, 0, 255, 0.993);
@@ -572,7 +569,7 @@ button:hover{
     border-radius: 25px;
     margin: 20px;
     min-width: 200px;
-    background: rgb(255, 255, 255) url(img/mvdoodle2.png);
+  background: rgb(255, 255, 255);    /* url(img/mvdoodle2.png)*/
     background-size: cover;
     display: flex;
     flex-direction: row-reverse;
@@ -587,7 +584,7 @@ button:hover{
  opacity: 1;
 }
 .projects.dark{
-    background: rgb(27, 27, 27) url(img/mvdoodle2.png);
+    background: rgb(27, 27, 27); /* url(img/mvdoodle2.png);*/
     background-size: cover;
      transition: 1s;
    
@@ -718,7 +715,7 @@ footer.dark{
     
     nav{
         position: fixed;
-        background-color: rgb(64, 17, 139);
+       
         max-height: 4em;
         min-height: 4em;
         z-index: 100;
@@ -726,6 +723,7 @@ footer.dark{
         flex-wrap:nowrap;
         padding-left: 100px;
         padding-right: 100px;
+        
       
     }
     .nav2{
@@ -736,7 +734,7 @@ footer.dark{
         min-height: 4em;
         margin-top: 30px;
         border-radius: 360px; 
-      
+        display: none;
        
     }
   
@@ -794,19 +792,21 @@ footer.dark{
   
     .container{
     position: relative;
-    padding: 150px;
-    
+    padding: 100px;
+    padding-bottom: 140px;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
-    max-width: 1600px;
+    max-width: 1450px;
    
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
+    
     align-items: center;
+    margin-bottom: 80px;
     
   
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198);
+   /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.198); */
     background: url(img/mvdoodle2.png) repeat; 
     background-size:cover;
     background-repeat:no-repeat;
@@ -814,8 +814,8 @@ footer.dark{
     left: 50%;
     right: 50%;
     transform: translate(-50%);
-    border: 5px solid black;
-    border-style: dashed;
+    border: 20px dashed black;
+   
     }
  
 
@@ -832,41 +832,21 @@ footer.dark{
    
     }
     .status-circle{
-        color: #000;
-        border: 2px solid black;
-        height: 50px;
-        width: 50px;
-        border-radius: 360px;
-        border-style: dashed;
-        background-color: lightgreen;
+      
+       
         background-size: 50px;
         margin-left: 50px;
     }
-    .status-circle:hover{
-        border-color:  rgb(0, 128, 53);
-        cursor: pointer;
-        background: lightgreen;
-        box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
-    }
+    
     .status-circle2{
-        color: #000;
-        border: 2px solid black;
-        height: 50px;
-        width: 50px;
-        border-radius: 360px;
-        border-style: dashed;
-        background-color: lightgreen;
-        margin-left: 210px;
+        
+       
+        margin-left: 205px;
         border-bottom-left-radius: 3px;     
         
     }
     
-    .status-circle2:hover{
-        border-color:  rgb(0, 128, 53);
-        cursor: pointer;
-        background: lightgreen;
-        box-shadow: 0 15px 30px rgba(89, 245, 89, 0.719);
-    }
+    
     .profile-img{
         position: relative;
         min-width: 100%;
@@ -886,12 +866,13 @@ footer.dark{
     .strikethrough{
         background-color: rgb(160, 160, 160);
         border: 2px solid rgb(160, 160, 160);
-        margin-top: 0px;
+    
         border-radius: 2px; 
         height: 40vh;  
         margin-left: 50px;
         display: flex;
         align-self: center;
+        align-items: center;
         margin-right:50px;
         max-height: 500px;
         min-width: 2px;
@@ -915,7 +896,7 @@ footer.dark{
          font-weight:bold;
          color: rgb(119, 119, 119);
          align-self: flex-start;
-         font-size: 40px; 
+         font-size: 30px; 
      }
      .h2project{
         font-family: 'Courier New', Courier, monospace;
@@ -965,9 +946,7 @@ footer.dark{
         border-radius: 25px;
         margin: 0;
         margin-top: 10px;
-        background: url(img/mvdoodle2.png);
         background-size: cover;
-        
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -1024,7 +1003,7 @@ footer.dark{
         margin-left: 0;
         width: 100vw;
         height: 60vh;
-       
+      
     }
 
 .frame2{
@@ -1034,8 +1013,8 @@ footer.dark{
     border-top-left-radius: 100% ;
    
     background-color: #d0d0d0;
-    border: 24px solid black;
-    border-style: dashed;
+    border: 24px dashed black;
+ 
    max-width: 760px;
    min-width: 300px;
    max-height: 900px;
@@ -1063,7 +1042,7 @@ footer.dark{
     background-size: cover;
     border: 3px solid rgb(0, 0, 0);
     border-style: dashed;
-    padding: 0;
+    padding: 50px;
 
 }
 .personal-details.black{
@@ -1088,9 +1067,11 @@ border-bottom: 3px dashed white;
 }
 .about-me{
     padding: 200px; 
-    max-width: 800px;
+    max-width: 700px;
     margin: 0;
+    
 }
+
 .about-paragraph{
     color: rgb(0, 0, 0);
     /*font-size: 30px;*/
