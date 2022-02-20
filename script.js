@@ -63,7 +63,7 @@ const headings = document.querySelector('h1');
 const headingsToo = document.querySelector('h2');
 const taglineStuff = document.getElementById('js-tag');
 const aboutMeWall = document.getElementById('personal-details');
-const heroImage = document.getElementById('profile-img');
+// const heroImage = document.getElementById('profile-img');
 const footerCta = document.getElementById ('cta');
 const footerTagline = document.getElementById('tagline');
 const footerContainer = document.getElementById('footer')
@@ -82,7 +82,7 @@ headings.classList.toggle('dark')
 headingsToo.classList.toggle('dark')
 taglineStuff.classList.toggle('light')
 aboutMeWall.classList.toggle('black')
-heroImage.classList.toggle('switch')
+// heroImage.classList.toggle('switch')
 footerCta.classList.toggle('light')
 footerTagline.classList.toggle('light')
 footerContainer.classList.toggle('dark')

@@ -413,7 +413,7 @@ section .hero{
     top: 50%;
     left: 50%;
     transform: translate(-50%);
-    background-image: url(img/avatarUpdateNoStrokes@0.5x.png);
+    background-image: url(img/avatarUpdateNoGlasses@0.5x.png);
     background-size:contain;
     background-repeat: no-repeat;
     display: flex;
@@ -861,7 +861,7 @@ footer.dark{
         position: relative;
         min-width: 100%;
         border-radius: 100%;
-        background-image: url(img/avatarUpdateNoStrokes.png);
+        background-image: url(img/avatarUpdateNoGlasses@0.5x.png);
         background-size:contain;
         background-repeat: no-repeat;
         display: flex;
