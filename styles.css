@@ -326,11 +326,9 @@ section .hero{
 
 
 .frame{
-    border: 2px solid rgb(0, 0, 0);
-    
+    border: 2px dashed rgb(0, 0, 0);
     border-radius: 360px;
-    border-style: dashed;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(30px) ; 
     box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.151);
     max-width: 350px;
@@ -339,6 +337,9 @@ section .hero{
     opacity: 0;
     
   
+}
+.frame.dark{
+    border: 2px dashed rgb(255, 255, 255);
 }
 .frame.slide{
     transform: translateX(0);
@@ -835,7 +836,7 @@ footer.dark{
     border-radius: 360px;
     border-style: dashed;
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.897);
+    background-color: rgba(255, 255, 255, 0);
    
     width:850px;
   

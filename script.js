@@ -72,6 +72,7 @@ const projectContainer = document.getElementsByClassName('projects');
 const projectTexts = document.getElementsByClassName('h2project');
 const socialIcons = document.getElementsByClassName('hero-icons');
 const aboutMeBar = document.getElementsByClassName('About-Me');
+const frameContainer = document.getElementById('frame')
 
 turnOff.addEventListener ('click', () => {
 turnOff.classList.toggle('disappear')
@@ -86,7 +87,7 @@ aboutMeWall.classList.toggle('black')
 footerCta.classList.toggle('light')
 footerTagline.classList.toggle('light')
 footerContainer.classList.toggle('dark')
-
+frameContainer.classList.toggle('dark')
 
 
 
@@ -117,7 +118,7 @@ aboutMeWall.classList.toggle('black')
 footerCta.classList.toggle('light')
 footerTagline.classList.toggle('light')
 footerContainer.classList.toggle('dark')
-
+frameContainer.classList.toggle('dark')
 
   for (var i = 0; i < projectContainer.length; i++){
 projectContainer[i].classList.toggle('dark');
