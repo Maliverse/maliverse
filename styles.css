@@ -1083,9 +1083,9 @@ border-bottom: 3px dashed white;
 }
 
 .about-paragraph{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     /*font-size: 30px;*/
-    background: rgb(248, 193, 11);
+    background: rgba(174, 0, 255, 0.993);
 
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
